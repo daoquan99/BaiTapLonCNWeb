@@ -138,13 +138,16 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\CTPhieuNhapsController.cs" />
     <Compile Include="Controllers\GioHangController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoaiSPsController.cs" />
     <Compile Include="Controllers\NhaCCsController.cs" />
+    <Compile Include="Controllers\PhieuNhapsController.cs" />
     <Compile Include="Controllers\SanPhamController.cs" />
     <Compile Include="Controllers\SanPhamsController.cs" />
     <Compile Include="Controllers\TimKiemController.cs" />
+    <Compile Include="Controllers\TintucsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -619,6 +622,21 @@
     <Content Include="Views\NhaCCs\Details.cshtml" />
     <Content Include="Views\NhaCCs\Edit.cshtml" />
     <Content Include="Views\NhaCCs\Index.cshtml" />
+    <Content Include="Views\PhieuNhaps\Create.cshtml" />
+    <Content Include="Views\PhieuNhaps\Delete.cshtml" />
+    <Content Include="Views\PhieuNhaps\Details.cshtml" />
+    <Content Include="Views\PhieuNhaps\Edit.cshtml" />
+    <Content Include="Views\PhieuNhaps\Index.cshtml" />
+    <Content Include="Views\CTPhieuNhaps\Create.cshtml" />
+    <Content Include="Views\CTPhieuNhaps\Delete.cshtml" />
+    <Content Include="Views\CTPhieuNhaps\Details.cshtml" />
+    <Content Include="Views\CTPhieuNhaps\Edit.cshtml" />
+    <Content Include="Views\CTPhieuNhaps\Index.cshtml" />
+    <Content Include="Views\Tintucs\Create.cshtml" />
+    <Content Include="Views\Tintucs\Delete.cshtml" />
+    <Content Include="Views\Tintucs\Details.cshtml" />
+    <Content Include="Views\Tintucs\Edit.cshtml" />
+    <Content Include="Views\Tintucs\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
