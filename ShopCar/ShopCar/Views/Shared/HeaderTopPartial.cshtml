@@ -1,0 +1,90 @@
+﻿@using ShopCar.Model;
+
+
+<div class="header_top">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-12 col-md-7">
+                <div class="header_top_links text-right">
+                    <ul>
+                        @if (Session["TaiKhoan"] != null && Session["TaiKhoan"].ToString() != "")
+                        {
+                            KhachHang kh = (KhachHang)Session["TaiKhoan"];
+                            <li>Chào @kh.TenKH</li>
+                            <li>@Html.ActionLink("Đăng xuất", "DangXuat", "Home")</li>
+                        }
+                        else
+                        {
+                            <li style="display:inline;">@Html.ActionLink("Đăng ký", "DangKy", "Home")</li>
+                            <li style="display:inline;"><a class="lock" href="#" id="btnDangNhap">Đăng Nhâp</a></li>
+                            @*<li style="display:inline;"><a class="lock" href="~/Views/Home/DangKy.cshtml">Đăng ký</a></li>*@
+                        }
+                        <li>@Html.ActionLink("Giỏ Hàng", "XemGioHang", "GioHang")</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<link href="~/Content/cssLogin/style_Login.css" rel="stylesheet" />
+<div>
+    <div id="popup_login">
+        <div class="login-form" style="height:400px">
+            <div style="clear:both;text-align:right;">
+                <span id="close_form" class="btn btn-danger">X</span>
+            </div>
+            <h2>Đăng nhập</h2>
+            <div class="form-info">
+                @using (Html.BeginForm("DangNhap", "Home"))
+                {
+                    <input type="text" class="txtTenDangNhap email" name="txtTenDangNhap" placeholder="Tài Khoản" required="" />
+                    <input type="password" class="txtMatKhau password" name="txtMatKhau" placeholder="Mật Khẩu" required="" />
+                    <p><a href="#">Quên tài khoản?</a></p>
+                    <ul class="login-buttons">
+                        <li>
+                            <input type="submit" class="btnDangNhap" value="Đăng Nhập" />
+                        </li>
+                        <li>
+                            <a href="@Url.Action("DangKy","Home")" class="hvr-sweep-to-left">Đăng ký</a>
+                        </li>
+                    </ul>
+                }
+
+                @*@using (Ajax.BeginForm("DangNhap","Home", new AjaxOptions
+        {
+            HttpMethod="post",
+            UpdateTargetId = "ThongBao",
+            InsertionMode = InsertionMode.Replace
+        })
+        )
+        {
+            <input type="text" class="txtTenDangNhap email" name="txtTenDangNhap" placeholder="Tài Khoản" required="" />
+            <input type="password" class="txtMatKhau password" name="txtMatKhau" placeholder="Mật Khẩu" required="" />
+            <p><a href="#">Quên tài khoản?</a></p>
+            <ul class="login-buttons">
+                <li>
+                    <input type="submit" class="btnDangNhap" value="Đăng Nhập" />
+                </li>
+                <li>
+                    <a href="@Url.Action("DangKy","Home")" class="hvr-sweep-to-left">Đăng ký</a>
+                </li>
+            </ul>
+            <div style="font-weight:bold;color:#ffff" id="ThongBao"></div>
+        }*@
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    //hiển thị
+    $("#btnDangNhap").click(function () {
+        $("#popup_login").show();
+    })
+
+    //đóng
+    $("#close_form").click(function () {
+        $("#popup_login").hide();
+    })
+
+</script>

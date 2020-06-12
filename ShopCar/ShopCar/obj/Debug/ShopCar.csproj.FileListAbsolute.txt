@@ -1,0 +1,490 @@
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\bin\ShopCar.dll.config
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\bin\ShopCar.dll
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\bin\ShopCar.pdb
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\csc.exe
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\csc.exe.config
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\csc.rsp
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\csi.exe
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\csi.exe.config
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\csi.rsp
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\Microsoft.CodeAnalysis.dll
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\Microsoft.CSharp.Core.targets
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\Microsoft.Managed.Core.targets
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\Microsoft.VisualBasic.Core.targets
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.AppContext.dll
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Collections.Immutable.dll
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Console.dll
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Diagnostics.StackTrace.dll
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.IO.Compression.dll
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.IO.FileSystem.dll
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.IO.FileSystem.Primitives.dll
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.IO.Pipes.AccessControl.dll
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.IO.Pipes.dll
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Reflection.Metadata.dll
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Security.AccessControl.dll
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Security.Claims.dll
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Security.Cryptography.Encoding.dll
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Security.Cryptography.Primitives.dll
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Security.Principal.Windows.dll
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Text.Encoding.CodePages.dll
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.ValueTuple.dll
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Xml.ReaderWriter.dll
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Xml.XmlDocument.dll
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Xml.XPath.dll
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Xml.XPath.XDocument.dll
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\vbc.exe
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\vbc.exe.config
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\vbc.rsp
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\VBCSCompiler.exe
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\VBCSCompiler.exe.config
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\bin\Antlr3.Runtime.dll
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\bin\Microsoft.Web.Infrastructure.dll
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\bin\Newtonsoft.Json.dll
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.Helpers.dll
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.Mvc.dll
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.Optimization.dll
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.Razor.dll
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.WebPages.Deployment.dll
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.WebPages.dll
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.WebPages.Razor.dll
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\bin\WebGrease.dll
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.Helpers.xml
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.Mvc.xml
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.Optimization.xml
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.Razor.xml
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.WebPages.xml
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.WebPages.Deployment.xml
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.WebPages.Razor.xml
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\bin\Newtonsoft.Json.xml
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\bin\Antlr3.Runtime.pdb
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\obj\Debug\ShopCar.csprojAssemblyReference.cache
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\obj\Debug\ShopCar.csproj.CoreCompileInputs.cache
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\obj\Debug\ShopCar.csproj.CopyComplete
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\obj\Debug\ShopCar.dll
+G:\TTNhom\công nghệ web\NiemTinVaHyVong\ShopCar\ShopCar\obj\Debug\ShopCar.pdb
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\bin\ShopCar.dll.config
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\bin\ShopCar.dll
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\bin\ShopCar.pdb
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\csc.exe
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\csc.exe.config
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\csc.rsp
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\csi.exe
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\csi.exe.config
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\csi.rsp
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\Microsoft.Managed.Core.targets
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.AppContext.dll
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Collections.Immutable.dll
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Console.dll
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.IO.Compression.dll
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.IO.FileSystem.dll
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.IO.Pipes.AccessControl.dll
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.IO.Pipes.dll
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Reflection.Metadata.dll
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Security.AccessControl.dll
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Security.Claims.dll
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Security.Principal.Windows.dll
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.ValueTuple.dll
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Xml.XmlDocument.dll
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Xml.XPath.dll
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\vbc.exe
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\vbc.exe.config
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\vbc.rsp
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\VBCSCompiler.exe
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\VBCSCompiler.exe.config
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\bin\Antlr3.Runtime.dll
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\bin\EntityFramework.dll
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\bin\EntityFramework.SqlServer.dll
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\bin\Microsoft.Web.Infrastructure.dll
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\bin\Newtonsoft.Json.dll
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.Helpers.dll
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.Mvc.dll
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.Optimization.dll
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.Razor.dll
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.WebPages.Deployment.dll
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.WebPages.dll
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.WebPages.Razor.dll
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\bin\WebGrease.dll
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\bin\EntityFramework.xml
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\bin\EntityFramework.SqlServer.xml
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.Helpers.xml
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.Mvc.xml
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.Optimization.xml
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.Razor.xml
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.WebPages.xml
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.WebPages.Deployment.xml
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.WebPages.Razor.xml
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\bin\Newtonsoft.Json.xml
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\bin\Antlr3.Runtime.pdb
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\obj\Debug\ShopCar.csprojAssemblyReference.cache
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\obj\Debug\ShopCar.csproj.CoreCompileInputs.cache
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\obj\Debug\ShopCar.csproj.CopyComplete
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\obj\Debug\ShopCar.dll
+E:\Document\Kì 2 năm 3\CN Web\Project\NiemTinVaHyVong\ShopCar\ShopCar\obj\Debug\ShopCar.pdb
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\bin\ShopCar.dll.config
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\bin\ShopCar.dll
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\bin\ShopCar.pdb
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\csc.exe
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\csc.exe.config
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\csc.rsp
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\csi.exe
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\csi.exe.config
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\csi.rsp
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\Microsoft.Managed.Core.targets
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.AppContext.dll
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Collections.Immutable.dll
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Console.dll
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.IO.Compression.dll
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.IO.FileSystem.dll
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.IO.Pipes.AccessControl.dll
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.IO.Pipes.dll
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Reflection.Metadata.dll
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Security.AccessControl.dll
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Security.Claims.dll
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Security.Principal.Windows.dll
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.ValueTuple.dll
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Xml.XmlDocument.dll
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Xml.XPath.dll
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\vbc.exe
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\vbc.exe.config
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\vbc.rsp
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\VBCSCompiler.exe
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\VBCSCompiler.exe.config
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\bin\Antlr3.Runtime.dll
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\bin\EntityFramework.dll
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\bin\EntityFramework.SqlServer.dll
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\bin\Microsoft.Web.Infrastructure.dll
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\bin\Newtonsoft.Json.dll
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.Helpers.dll
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.Mvc.dll
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.Optimization.dll
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.Razor.dll
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.WebPages.Deployment.dll
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.WebPages.dll
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.WebPages.Razor.dll
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\bin\WebGrease.dll
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\bin\EntityFramework.xml
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\bin\EntityFramework.SqlServer.xml
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.Helpers.xml
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.Mvc.xml
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.Optimization.xml
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.Razor.xml
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.WebPages.xml
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.WebPages.Deployment.xml
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.WebPages.Razor.xml
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\bin\Newtonsoft.Json.xml
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\bin\Antlr3.Runtime.pdb
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\obj\Debug\ShopCar.csprojAssemblyReference.cache
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\obj\Debug\ShopCar.csproj.CoreCompileInputs.cache
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\obj\Debug\ShopCar.csproj.CopyComplete
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\obj\Debug\ShopCar.dll
+E:\Công Nghệ Web\NiemTinVaHyVong\ShopCar\ShopCar\obj\Debug\ShopCar.pdb
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\bin\ShopCar.dll.config
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\bin\ShopCar.dll
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\bin\ShopCar.pdb
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\csc.exe
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\csc.exe.config
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\csc.rsp
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\csi.exe
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\csi.exe.config
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\csi.rsp
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\Microsoft.CodeAnalysis.dll
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\Microsoft.CSharp.Core.targets
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\Microsoft.Managed.Core.targets
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\Microsoft.VisualBasic.Core.targets
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.AppContext.dll
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Collections.Immutable.dll
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Console.dll
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Diagnostics.StackTrace.dll
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.IO.Compression.dll
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.IO.FileSystem.dll
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.IO.FileSystem.Primitives.dll
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.IO.Pipes.AccessControl.dll
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.IO.Pipes.dll
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Reflection.Metadata.dll
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Security.AccessControl.dll
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Security.Claims.dll
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Security.Cryptography.Encoding.dll
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Security.Cryptography.Primitives.dll
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Security.Principal.Windows.dll
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Text.Encoding.CodePages.dll
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.ValueTuple.dll
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Xml.ReaderWriter.dll
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Xml.XmlDocument.dll
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Xml.XPath.dll
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Xml.XPath.XDocument.dll
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\vbc.exe
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\vbc.exe.config
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\vbc.rsp
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\VBCSCompiler.exe
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\VBCSCompiler.exe.config
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\bin\Antlr3.Runtime.dll
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\bin\EntityFramework.dll
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\bin\EntityFramework.SqlServer.dll
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\bin\Microsoft.Web.Infrastructure.dll
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\bin\Newtonsoft.Json.dll
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.Helpers.dll
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.Mvc.dll
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.Optimization.dll
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.Razor.dll
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.WebPages.Deployment.dll
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.WebPages.dll
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.WebPages.Razor.dll
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\bin\WebGrease.dll
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\bin\EntityFramework.xml
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\bin\EntityFramework.SqlServer.xml
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.Helpers.xml
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.Mvc.xml
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.Optimization.xml
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.Razor.xml
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.WebPages.xml
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.WebPages.Deployment.xml
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.WebPages.Razor.xml
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\bin\Newtonsoft.Json.xml
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\bin\Antlr3.Runtime.pdb
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\obj\Debug\ShopCar.csprojAssemblyReference.cache
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\obj\Debug\ShopCar.csproj.CoreCompileInputs.cache
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\obj\Debug\ShopCar.csproj.CopyComplete
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\obj\Debug\ShopCar.dll
+G:\TTNhom\NiemTinVaHyVong\ShopCar\ShopCar\obj\Debug\ShopCar.pdb
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\ShopCar.dll.config
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\ShopCar.dll
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\ShopCar.pdb
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\csc.exe
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\csc.exe.config
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\csc.rsp
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\csi.exe
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\csi.exe.config
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\csi.rsp
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\Microsoft.CodeAnalysis.dll
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\Microsoft.CSharp.Core.targets
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\Microsoft.Managed.Core.targets
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\Microsoft.VisualBasic.Core.targets
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.AppContext.dll
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Collections.Immutable.dll
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Console.dll
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Diagnostics.StackTrace.dll
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.IO.Compression.dll
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.IO.FileSystem.dll
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.IO.FileSystem.Primitives.dll
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.IO.Pipes.AccessControl.dll
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.IO.Pipes.dll
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Reflection.Metadata.dll
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Security.AccessControl.dll
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Security.Claims.dll
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Security.Cryptography.Encoding.dll
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Security.Cryptography.Primitives.dll
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Security.Principal.Windows.dll
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Text.Encoding.CodePages.dll
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.ValueTuple.dll
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Xml.ReaderWriter.dll
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Xml.XmlDocument.dll
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Xml.XPath.dll
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Xml.XPath.XDocument.dll
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\vbc.exe
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\vbc.exe.config
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\vbc.rsp
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\VBCSCompiler.exe
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\VBCSCompiler.exe.config
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\Antlr3.Runtime.dll
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\EntityFramework.dll
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\EntityFramework.SqlServer.dll
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\Microsoft.Web.Infrastructure.dll
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\Newtonsoft.Json.dll
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.Helpers.dll
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.Mvc.dll
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.Optimization.dll
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.Razor.dll
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.WebPages.Deployment.dll
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.WebPages.dll
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.WebPages.Razor.dll
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\WebGrease.dll
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\EntityFramework.xml
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\EntityFramework.SqlServer.xml
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.Helpers.xml
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.Mvc.xml
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.Optimization.xml
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.Razor.xml
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.WebPages.xml
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.WebPages.Deployment.xml
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.WebPages.Razor.xml
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\Newtonsoft.Json.xml
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\Antlr3.Runtime.pdb
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\obj\Debug\ShopCar.csproj.CoreCompileInputs.cache
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\obj\Debug\ShopCar.csproj.CopyComplete
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\obj\Debug\ShopCar.dll
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\obj\Debug\ShopCar.pdb
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\PagedList.dll
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\PagedList.Mvc.dll
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\PagedList.xml
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\PagedList.Mvc.xml
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\CaptchaMvc.dll
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\CaptchaMvc.pdb
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\bin\CaptchaMvc.xml
+G:\BTL cong nghe web\NiemTinVaHyVong\ShopCar\ShopCar\obj\Debug\ShopCar.csprojAssemblyReference.cache
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\ShopCar.dll.config
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\ShopCar.dll
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\ShopCar.pdb
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\csc.exe
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\csc.exe.config
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\csc.rsp
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\csi.exe
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\csi.exe.config
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\csi.rsp
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\Microsoft.CodeAnalysis.dll
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\Microsoft.CSharp.Core.targets
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\Microsoft.Managed.Core.targets
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\Microsoft.VisualBasic.Core.targets
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.AppContext.dll
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Collections.Immutable.dll
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Console.dll
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Diagnostics.StackTrace.dll
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.IO.Compression.dll
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.IO.FileSystem.dll
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.IO.FileSystem.Primitives.dll
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.IO.Pipes.AccessControl.dll
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.IO.Pipes.dll
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Reflection.Metadata.dll
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Security.AccessControl.dll
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Security.Claims.dll
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Security.Cryptography.Encoding.dll
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Security.Cryptography.Primitives.dll
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Security.Principal.Windows.dll
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Text.Encoding.CodePages.dll
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.ValueTuple.dll
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Xml.ReaderWriter.dll
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Xml.XmlDocument.dll
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Xml.XPath.dll
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\System.Xml.XPath.XDocument.dll
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\vbc.exe
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\vbc.exe.config
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\vbc.rsp
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\VBCSCompiler.exe
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\roslyn\VBCSCompiler.exe.config
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\Antlr3.Runtime.dll
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\CaptchaMvc.dll
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\EntityFramework.dll
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\EntityFramework.SqlServer.dll
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\Microsoft.Web.Infrastructure.dll
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\Newtonsoft.Json.dll
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\PagedList.dll
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\PagedList.Mvc.dll
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.Helpers.dll
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.Mvc.dll
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.Optimization.dll
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.Razor.dll
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.WebPages.Deployment.dll
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.WebPages.dll
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.WebPages.Razor.dll
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\WebGrease.dll
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\CaptchaMvc.pdb
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\CaptchaMvc.xml
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\EntityFramework.xml
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\EntityFramework.SqlServer.xml
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\PagedList.xml
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\PagedList.Mvc.xml
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.Helpers.xml
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.Mvc.xml
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.Optimization.xml
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.Razor.xml
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.WebPages.xml
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.WebPages.Deployment.xml
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\System.Web.WebPages.Razor.xml
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\Newtonsoft.Json.xml
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\Antlr3.Runtime.pdb
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\obj\Debug\ShopCar.csprojAssemblyReference.cache
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\obj\Debug\ShopCar.csproj.CoreCompileInputs.cache
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\obj\Debug\ShopCar.csproj.CopyComplete
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\obj\Debug\ShopCar.dll
+G:\BaiTapChuanBiThi\ASP.NET\NiemTinVaHyVong\ShopCar\ShopCar\obj\Debug\ShopCar.pdb

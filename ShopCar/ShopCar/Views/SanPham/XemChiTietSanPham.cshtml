@@ -1,0 +1,52 @@
+﻿@using ShopCar.Model;
+@model SanPham
+
+@{
+    ViewBag.Title = "XemChiTietSanPham";
+    Layout = "~/Views/Shared/_HomeLayout.cshtml";
+}
+
+@{ 
+    IEnumerable<SanPham> lstSP = (IEnumerable<SanPham>)ViewBag.lstSP;
+}
+
+<div class="col-9 product-price">
+    <div class="register">
+        <div class="col-md-5">
+            <img src="~/images/@Model.URLAnh" />
+        </div>
+        <div class="col-md-7">
+            <h1 style="color:black;">@Model.TenSP</h1>
+            <br /><br />
+            <h3 style="color:#DE921F;border-bottom:1px solid black;">@Model.DonGia.Value.ToString("#,##")</h3>
+            <div class="text" style="font-size:15px;">
+                @Html.Raw(Model.MoTa)
+            </div>
+            <a href="@Url.Action("ThemGioHang", "GioHang", new { @MaSP = Model.MaSP, @strURL = Request.Url.ToString() })" class="btn btn-primary">
+                Thêm vào giỏ hàng
+            </a>
+        </div>
+    </div>
+</div>
+<div class="shop_area shop_fullwidth">
+    <div class="container">
+        <div class="row">
+            <div class="col-12" style="text-align:center">
+                <h1 style="color:red">Sản phẩm tương tự</h1>
+                @Html.Partial("~/Views/SanPham/SanPhamPartial.cshtml", lstSP)
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .product-price {
+        margin: 20px auto;
+        display: inline-block;
+    }
+    .product-price .btn-primary{
+        font-size:20px;
+        margin-top:10px;
+    }
+</style>

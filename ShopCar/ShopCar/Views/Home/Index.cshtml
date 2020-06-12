@@ -1,0 +1,61 @@
+﻿@using ShopCar.Model;
+@model IEnumerable<SanPham>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_HomeLayout.cshtml";
+}
+
+@{
+    IEnumerable<SanPham> lstChanNang = (IEnumerable<SanPham>)ViewBag.lstChanNang;
+    IEnumerable<SanPham> lstPhuKienKhac = (IEnumerable<SanPham>)ViewBag.lstPhuKienKhac;
+    IEnumerable<SanPham> lstDongCo = (IEnumerable<SanPham>)ViewBag.lstDongCo;
+    IEnumerable<SanPham> lstPhanh = (IEnumerable<SanPham>)ViewBag.lstPhanh;
+    IEnumerable<SanPham> lstDauNhot = (IEnumerable<SanPham>)ViewBag.lstDauNhot;
+    IEnumerable<SanPham> lstSon = (IEnumerable<SanPham>)ViewBag.lstSon;
+}
+<div class="owl-item active" style="width: 100%;">
+    <div class="single_slider d-flex align-items-center" style="background-image: url(/Content/assets/img/slider/slider5.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="slider_content" style="color:#ffff;">
+                        <h1>WELCOME TO G15 AUTO</h1>
+                        <h2>MUA HÀNG <span>THEO CÁCH CỦA BẠN</span></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="shop_area shop_fullwidth">
+    <div class="container">
+        <div class="row">
+            <div class="col-12" style="text-align:center">
+                <h1 style="color:red">Tấm chắn nắng</h1>
+                @Html.Partial("~/Views/SanPham/SanPhamPartial.cshtml", lstChanNang)
+                <div class="clearfix"> </div>
+
+                <h1 style="color:red">Động cơ </h1>
+                @Html.Partial("~/Views/SanPham/SanPhamPartial.cshtml", lstDongCo)
+                <div class="clearfix"> </div>
+
+                <h1 style="color:red">Phanh </h1>
+                @Html.Partial("~/Views/SanPham/SanPhamPartial.cshtml", lstPhanh)
+                <div class="clearfix"> </div>
+                <h1 style="color:red">Phụ kiện khác</h1>
+                @Html.Partial("~/Views/SanPham/SanPhamPartial.cshtml", lstPhuKienKhac)
+                <div class="clearfix"> </div>
+                <h1 style="color:red">Dầu nhớt</h1>
+                @Html.Partial("~/Views/SanPham/SanPhamPartial.cshtml", lstDauNhot)
+                <div class="clearfix"> </div>
+
+                <h1 style="color:red">Sơn ô tô</h1>
+                @Html.Partial("~/Views/SanPham/SanPhamPartial.cshtml", lstSon)
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,129 @@
+﻿@using ShopCar.Model;
+@using PagedList.Mvc;
+@model PagedList.IPagedList<SanPham>
+
+@{
+    ViewBag.Title = "DanhSachSanPham";
+    Layout = "~/Views/Shared/_HomeLayout.cshtml";
+}
+
+<div class="col-md-12">
+    <div class="shop_banner_thumb">
+        <img src="~/Content/assets/img/bg/banner23.jpg" style="width:100%">
+    </div>
+</div>
+
+<div class="shop_toolbar_wrapper" style="width:100%;">
+    <div class="shop_toolbar_btn">
+        <button data-role="grid_4" type="button" class="btn-grid-4 active" data-toggle="tooltip" title="4"></button>
+        <button data-role="grid_3" type="button" class="btn-grid-3" data-toggle="tooltip" title="3"></button>
+        <button data-role="grid_list" type="button" class="btn-list" data-toggle="tooltip" title="List"></button>
+    </div>
+</div>
+<div class="row shop_wrapper" style="margin:30px 0;">
+    @foreach (var item in Model)
+    {
+        <div class="col-lg-3 col-md-4 col-12 ">
+            <article class="single_product">
+                <figure>
+                    <div class="product_thumb">
+                        <a class="primary_img" href="@Url.Action("XemChiTietSanPham","SanPham",new { @MaSP=item.MaSP })">
+                            <img src="~/images/@item.URLAnh" style="width:100%;height:350px;">
+                        </a>
+                        @*<div class="label_product">
+                                <span class="label_sale">-56%</span>
+                            </div>*@
+                        <div class="quick_button">
+                            <a href="@Url.Action("XemChiTietSanPham","SanPham",new { @MaSP=item.MaSP })" data-toggle="modal" data-target="#modal_box" title="Xem hàng">
+                                <i class="icon-eye" style="font-size:40px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product_content grid_content" style="text-align:left;">
+                        <div class="product_content_inner">
+                            <p class="manufacture_product"><a href="#">Hàng mới</a></p>
+                            <h4 class="product_name"><a href="product-details.html">@item.TenSP</a></h4>
+                            <div class="product_rating">
+                                <ul>
+                                    <li><a href="#"><i class="ion-android-star-outline"></i></a></li>
+                                    <li><a href="#"><i class="ion-android-star-outline"></i></a></li>
+                                    <li><a href="#"><i class="ion-android-star-outline"></i></a></li>
+                                    <li><a href="#"><i class="ion-android-star-outline"></i></a></li>
+                                    <li><a href="#"><i class="ion-android-star-outline"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="price_box">
+                                @*<span class="old_price">$320.00</span>*@
+                                <span class="current_price">@item.DonGia.Value.ToString("#,##")</span>
+                            </div>
+                        </div>
+                        <div class="action_links">
+                            <ul>
+                                <li class="add_to_cart">
+                                    <a href="@Url.Action("ThemGioHang", "GioHang", new { @MaSP = item.MaSP, @strURL = Request.Url.ToString() })" class="item_add">
+                                        Thêm vào giỏ hàng
+                                    </a>
+                                    @*@Ajax.ActionLink("Thêm vào giỏ hàng ajax", "GioHangPartial", "GioHang", new { @MaSP = item.MaSP, @strURL = Request.Url.ToString() },
+                                        new AjaxOptions { HttpMethod = "GET", UpdateTargetId = "divGioHang", InsertionMode = InsertionMode.Replace }, null)*@
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product_content list_content">
+                        <div class="left_caption">
+                            <p class="manufacture_product"><a href="#">Hàng mới</a></p>
+                            <h4 class="product_name"><a href="product-details.html">@item.TenSP</a></h4>
+                            <div class="product_rating">
+                                <ul>
+                                    <li><a href="#"><i class="ion-android-star-outline"></i></a></li>
+                                    <li><a href="#"><i class="ion-android-star-outline"></i></a></li>
+                                    <li><a href="#"><i class="ion-android-star-outline"></i></a></li>
+                                    <li><a href="#"><i class="ion-android-star-outline"></i></a></li>
+                                    <li><a href="#"><i class="ion-android-star-outline"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="price_box">
+                                @*<span class="old_price">$320.00</span>*@
+                                <span class="current_price">@item.DonGia.Value.ToString("#,##")</span>
+                            </div>
+                            <div class="product_desc" style="width:800px">
+                                <p>@Html.Raw(item.MoTa)</p>
+                            </div>
+                        </div>
+                        <div class="right_caption">
+                            @*<p class="text_available">Availability: <span>In Stock</span></p>*@
+                            <div class="action_links">
+                                <ul>
+                                    <li class="add_to_cart">
+                                        <a href="@Url.Action("ThemGioHang", "GioHang", new { @MaSP = item.MaSP, @strURL = Request.Url.ToString() })" class="item_add">Thêm vào giỏ hàng!</a>
+                                        @*@Ajax.ActionLink("Thêm vào giỏ hàng ajax", "GioHangPartial", "GioHang", new { @MaSP = item.MaSP, @strURL = Request.Url.ToString() },
+                                            new AjaxOptions { HttpMethod = "GET", UpdateTargetId = "divGioHang", InsertionMode = InsertionMode.Replace }, null)*@
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </figure>
+            </article>
+        </div>
+    }
+</div>
+
+<div class="col-12">
+    Trang @(Model.PageCount<Model.PageNumber? 0 : Model.PageNumber)/@Model.PageCount
+    @Html.PagedListPager(Model, soTrang => Url.Action("DanhSachSanPham", new { page = soTrang }));
+</div>
+
+<style>
+    .quick_button a {
+        font-size: 18px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        display: inline-block;
+        text-align: center;
+        background: #C70909;
+        color: #ffffff;
+        border-radius: 2px;
+    }
+</style>

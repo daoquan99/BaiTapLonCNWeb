@@ -1,0 +1,202 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/Content/assets/css/plugins.css">
+    <link rel="stylesheet" href="~/Content/assets/css/style.css">
+    <link rel="stylesheet" href="~/Content/assets/css/style1.css">
+    <script src="~/Content/assets/js/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <div class="off_canvars_overlay">
+
+    </div>
+    <div class="offcanvas_menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="canvas_open">
+                        <a href="javascript:void(0)"><i class="ion-navicon"></i></a>
+                    </div>
+                    <div class="offcanvas_menu_wrapper">
+                        <div class="canvas_close">
+                            <a href="javascript:void(0)"><i class="ion-android-close"></i></a>
+                        </div>
+                        <div class="call_support">
+                            <p><i class="icon-phone-call" aria-hidden="true"></i> <span>Hotline: <a href="tel:0123456789">0123 456 789</a></span></p>
+
+                        </div>
+                        <div class="header_top_links">
+                            <ul>
+                                <li><a href="login.html">Đăng ký</a></li>
+                                <li><a href="login.html">Đăng nhập</a></li>
+                                <li>@Html.ActionLink("Giỏ hàng", "XemGioHang", "GioHang")
+                            </ul>
+                        </div>
+                        <div class="search_container">
+                            @Html.Action("MenuPartial", "Home")
+                            @*@using (Html.BeginForm("LayTuKhoaTimKiem", "TimKiem"))
+                                {
+                                    @Html.Action("MenuPartial", "Home")
+                                    <div class="search_box">
+                                        <input type="text" name="sTuKhoa" placeholder="Nhập tên sản phẩm">
+                                        <button type="submit">Tìm kiếm</button>
+                                    </div>
+                                }*@
+                        </div>
+                        <div class="header_configure_area">
+                            <div class="header_wishlist">
+                                <a href="wishlist.html">
+                                    <i class="icon-heart"></i>
+                                    <span class="wishlist_count">3</span>
+                                </a>
+                            </div>
+                            @Html.Action("GioHangPartial", "GioHang")
+                        </div>
+                        <div id="menu" class="text-left ">
+                            <ul class="offcanvas_main_menu">
+                                <li class="menu-item-has-children active">
+                                    @Html.ActionLink("Trang chủ", "Index", "Home")
+                                </li>
+                                <li class="menu-item-has-children">
+                                    @Html.ActionLink("Sản phẩm", "DachSachSanPham", "SanPham")
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="my-account.html">Tài khoản của tôi</a>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="about.html">Về chúng tôi</a>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="contact.html"> Liên hệ</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="offcanvas_footer">
+                            <span><a href="#"><i class="fa fa-envelope-o"></i> youremail@email.com</a></span>
+                            <ul>
+                                <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li class="pinterest"><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+                                <li class="google-plus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                <li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="main_header">
+            @Html.Partial("HeaderTopPartial")
+            <div class="header_middle">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-2">
+                            <div class="logo">
+                                <a href="@Url.Action("Index","Home")">
+                                    <h1 style=" color: #D23A3A; display: inline">G</h1>
+                                    <h1 style=" color:#FFFFFF ; display : inline; padding-right: 10px">15</h1>
+                                    <h1 style=" color: #FFFFFF; display: inline">Auto</h1>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-10">
+                            <div class="header_right_box">
+                                <div class="search_container">
+                                    @Html.Action("MenuPartial", "Home")
+                                    @*@using (Html.BeginForm("LayTuKhoaTimKiem", "TimKiem"))
+                                        {
+
+                                            <div class="search_box">
+                                                <input type="text" name="sTuKhoa" placeholder="Nhập tên sản phẩm">
+                                                <button type="submit">Tìm kiếm</button>
+                                            </div>
+                                        }*@
+                                </div>
+                                <div class="header_configure_area">
+                                    <div class="header_wishlist">
+                                        <a href="wishlist.html">
+                                            <i class="icon-heart"></i>
+                                            <span class="wishlist_count">3</span>
+                                        </a>
+                                    </div>
+                                    @Html.Action("GioHangPartial", "GioHang")
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header_bottom sticky-header">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <div class="main_menu menu_position text-left">
+                                <nav>
+                                    <ul>
+                                        <li><a class="active" href="@Url.Action("Index","Home")">Trang chủ</a></li>
+                                        <li class="mega_items">@Html.ActionLink("Sản phẩm", "DanhSachSanPham", "SanPham")
+                                        <li><a href="#">Về chúng tôi</a></li>
+                                        <li><a href="#"> Liên hệ</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="call_support text-right">
+                                <p><i class="icon-phone-call" aria-hidden="true"></i> <span>Hotline: <a href="tel:0123456789">0123456789</a></span></p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    @RenderBody()
+
+    <script src="~/Content/assets/js/plugins.js"></script>
+    <script src="~/Content/assets/js/main.js"></script>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-left">
+                    <h3>GIỚI THIỆU</h3>
+                    <a href=""><i class="fa fa-angle-right">Về chúng tôi</i></a><br>
+                    <a href=""><i class="fa fa-angle-right">Cam kết chất lượng</i></a><br>
+                    <a href=""><i class="fa fa-angle-right">Liên hệ</i></a><br>
+                    <a href=""><i class="fa fa-angle-right">Hướng dẫn mua hàng</i></a><br>
+                    <a href=""><i class="fa fa-angle-right">Vận chuyển và thanh toán</i></a><br>
+                    <a href=""><i class="fa fa-angle-right">Chính sách bảo hành</i></a><br>
+                </div>
+                <div class="col-md-4 text-left">
+                    <h3>THÔNG TIN LIÊN HỆ</h3>
+                    <a href=""><i class="fa fa-windows icon"></i>  Tên công ty</a><br>
+                    <a href=""><i class="fa fa-map-marker icon"></i>  Địa chỉ</i></a><br>
+                    <a href=""><i class="fa fa-phone icon"></i>  Liên hệ</a><br>
+                    <a href=""><i class="fa fa-globe icon"></i>  Tên trang web</a><br>
+                    <a href=""><i class="fa fa-envelope icon"></i>  Email</a><br>
+                </div>
+                <div class="col-md-4 icon text-left">
+                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                    <i class="fa fa-google-plus-square" aria-hidden="true"></i>
+                    <h4 style="margin:15px 0;">All buiding by <span style="color:red">G15 AUTO</span></h4>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--footer-->
+</body>
+</html>

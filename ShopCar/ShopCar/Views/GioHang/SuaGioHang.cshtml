@@ -1,0 +1,145 @@
+﻿@using ShopCar.Model;
+@model ItemGioHang
+
+@{
+    ViewBag.Title = "SuaGioHang";
+    Layout = "~/Views/Shared/_HomeLayout.cshtml";
+}
+
+@{
+    List<ItemGioHang> lstGioHang = (List<ItemGioHang>)ViewBag.GioHang;
+}
+
+<div class="cart_page_bg">
+    <div class="container">
+        <div class="shopping_cart_area">
+            <div class="col-12">
+                <div class="table_desc">
+                    <div class="cart_page table-responsive">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="product_name">Mã Sản phẩm</th>
+                                    <th class="product_thumb">Ảnh minh họa</th>
+                                    <th class="product_name">Sản phẩm</th>
+                                    <th class="product-price">Giá sản phẩm</th>
+                                    <th class="product_quantity">Số lượng</th>
+                                    <th class="product_total">Thành tiền</th>
+                                    <th class="product_total"></th>
+                                    <th class="product_total"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in lstGioHang)
+                                {
+                                    if (item.MaSP == Model.MaSP)
+                                    {
+                                        using (Html.BeginForm("CapNhatGioHang", "GioHang"))
+                                        {
+                                            <tr>
+                                                <td class="product_name">
+                                                    @Html.Hidden("MaSP", item.MaSP)
+                                                    <a href="@Url.Action("XemChiTietSanPham","SanPham",new { @MaSP=item.MaSP })">@item.MaSP</a>
+                                                </td>
+                                                <td class="product_thumb">
+                                                    <a href="#"><img src="~/images/@item.URLAnh" style="width:200px;height:150px;"></a>
+                                                </td>
+                                                <td class="product_name">
+                                                    <a href="@Url.Action("XemChiTietSanPham","SanPham",new { @MaSP=item.MaSP })">@item.TenSP</a>
+                                                </td>
+
+                                                <td class="product-price">
+                                                    <span>@item.DonGia.ToString("#,##").Replace(',', '.') VNĐ</span>
+                                                </td>
+
+                                                <td class="product_quantity">
+                                                    <label>Số lượng: </label>
+                                                    @Html.TextBox("SoLuong", item.SoLuong, new { @class = "SoLuongThayDoi" })
+                                                    <p id="TB_SoLuongThayDoi" style="color:red;"></p>
+                                                </td>
+
+                                                <td class="product_total">
+                                                    <span>@item.ThanhTien.ToString("#,##").Replace(',', '.') VNĐ</span>
+                                                </td>
+                                                <td class="product_remove">
+                                                    <input type="submit" value="Cập nhật" class="btn btn-success" />
+                                                </td>
+                                                <td class="product_remove">
+                                                    <a href="@Url.Action("XoaItemGH","GioHang",new { @MaSP=item.MaSP })">
+                                                        <i class="fa fa-trash-o" title="Xóa"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        }
+
+                                    }
+
+                                    else
+                                    {
+                                        <tr>
+                                            <td class="product_name">
+                                                @Html.Hidden("MaSP", item.MaSP)
+                                                <a href="@Url.Action("XemChiTietSanPham","SanPham",new { @MaSP=item.MaSP })">@item.MaSP</a>
+                                            </td>
+                                            <td class="product_thumb">
+                                                <a href="#"><img src="~/images/@item.URLAnh" style="width:200px;height:150px;"></a>
+                                            </td>
+                                            <td class="product_name">
+                                                <a href="@Url.Action("XemChiTietSanPham","SanPham",new { @MaSP=item.MaSP })">@item.TenSP</a>
+                                            </td>
+
+                                            <td class="product-price">
+                                                <span>@item.DonGia.ToString("#,##").Replace(',', '.') VNĐ</span>
+                                            </td>
+
+                                            <td class="product_quantity">
+                                                <label>Số lượng: </label> @item.SoLuong
+                                                @*@Html.TextBox("SoLuong", item.SoLuong, new { @class = "SoLuongThayDoi" })
+                                                    <p id="TB_SoLuongThayDoi" style="color:red;"></p>*@
+                                            </td>
+
+                                            <td class="product_total">
+                                                <span>@item.ThanhTien.ToString("#,##").Replace(',', '.') VNĐ</span>
+                                            </td>
+                                            <td class="product_remove">
+                                                <a href="@Url.Action("SuaGioHang","GioHang",new { @MaSP=item.MaSP})">
+                                                    <i class="fa fa-edit" title="Sửa"></i>
+                                                </a>
+                                            </td>
+                                            <td class="product_remove">
+                                                <a href="@Url.Action("XoaItemGH","GioHang",new { @MaSP=item.MaSP })">
+                                                    <i class="fa fa-trash-o" title="Xóa"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    }
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .product_remove a i {
+        font-size: 35px;
+    }
+
+    .cart_page input[type="submit"] {
+        font-size: 15px;
+    }
+</style>
+
+<script>
+    $("#btnCapNhapGH").click(function () {
+        var SoLuong = $(".SoLuongThayDoi").val();
+        if (isNaN(SoLuong) == true || SoLuong < 0) {
+            $("#TB_SoLuongThayDoi").text("Số lượng không hợp lệ!")
+            return false;
+        }
+    });
+</script>
+

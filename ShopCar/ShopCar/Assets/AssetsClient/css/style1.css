@@ -1,0 +1,193 @@
+﻿
+footer {
+    background: #363A3D;
+    color: #ffff;
+    padding: 20px 0;
+    overflow: auto;
+    font-size: 18px;
+}
+
+    footer h3 {
+        font-size: 30px;
+        font-weight: bold;
+        padding: 10px;
+    }
+
+    footer a {
+        line-height: 2;
+        font-size: 20px;
+        color: #ffff;
+        text-decoration: none;
+    }
+
+        footer a:hover {
+            text-decoration: underline;
+            color: #369682;
+        }
+
+        footer a .icon {
+            font-size: 20px;
+            width: 40px;
+            height: 40px;
+            padding: 10px 0;
+            text-align: center;
+            border: 1px solid black;
+            background: #ffff;
+            color: red;
+            border-radius: 20px;
+        }
+
+    footer .icon i {
+        font-size: 20px;
+        width: 40px;
+        height: 40px;
+        padding: 10px 0;
+        text-align: center;
+        border: 1px solid black;
+        background: #ffff;
+        color: #193E95;
+        border-radius: 20px;
+    }
+
+    footer .icon h4 {
+        line-height: 30px;
+    }
+
+.DangKy {
+    overflow: auto;
+    margin-top: 75px;
+    padding: 10px 100px;
+    text-align: center;
+}
+
+    .DangKy h3 {
+        font-size: 30px;
+        padding: 5px;
+        font-weight: bold;
+        padding: 10px 0;
+    }
+
+    .DangKy input {
+        width: 350px;
+        margin: 5px 0;
+        padding: 5px;
+        font-size: 20px;
+        border: groove;
+        border-radius: 5px;
+    }
+
+    .DangKy h5 {
+        padding: 5px;
+        font-size: 20px;
+    }
+
+    .DangKy .gioitinh input {
+        width: 20px;
+        text-align: left;
+    }
+
+    .DangKy .button-DangKy {
+        background: #0D9E59;
+        color: #ffff;
+        cursor: pointer;
+        width: 300px;
+        margin: 10px;
+        padding: 10px;
+        border-style: none;
+        border-radius: 5px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+        .DangKy .button-DangKy:hover {
+            background: #4AA860;
+        }
+
+.DangNhap {
+    overflow: auto;
+    margin-top: 75px;
+    padding: 10px 100px;
+    text-align: center;
+}
+
+    .DangNhap h3 {
+        font-size: 30px;
+        padding: 5px;
+        font-weight: bold;
+        padding: 10px 0;
+    }
+
+    .DangNhap input {
+        width: 350px;
+        margin: 5px 0;
+        padding: 5px;
+        font-size: 20px;
+        border: groove;
+        border-radius: 5px;
+    }
+
+    .DangNhap .button-DangNhap {
+        background: #0E4DE1;
+        color: #ffff;
+        cursor: pointer;
+        width: 350px;
+        border: none;
+        border-radius: 5px;
+        margin: 10px;
+        padding: 10px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+        .DangNhap .button-DangNhap:hover {
+            background: #1B4EC5;
+        }
+
+    .DangNhap .button-DangKy {
+        background: #0D9E59;
+        color: #ffff;
+        cursor: pointer;
+        width: 250px;
+        margin: 10px;
+        padding: 10px;
+        border-style: none;
+        border-radius: 5px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+        .DangNhap .button-DangKy:hover {
+            background: #4AA860;
+        }
+
+    .DangNhap a {
+        font-size: 12px;
+        color: #6280CF;
+        text-decoration: none;
+    }
+
+        .DangNhap a:hover {
+            text-decoration: underline;
+            color: #2135AD;
+        }
+
+@media only screen and (max-width: 768px) {
+    [class*="col-"] {
+        width: 100%;
+        text-align: center;
+        float: none;
+        display: block;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    footer .copyright {
+        text-align: center;
+    }
+
+    .DangKy {
+        padding: 10px 0;
+    }
+}
