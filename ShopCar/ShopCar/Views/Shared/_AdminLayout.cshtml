@@ -39,17 +39,35 @@
                 <!-- sidebar nav start -->
                 <ul class="nav nav-pills nav-stacked custom-nav">
                     <li class="active">
-                        <a href="@Url.Action("Index","QuanLySanPham")"><i class="fa fa-product-hunt" style="font-size:30px"></i><span>Danh sách sản phẩm</span></a>
+                        <a href="@Url.Action("Index","QuanLySanPham")">
+                            <img src="~/Assets/AssetsAdmin/images/right.png" alt="logo-icon">
+                            <span>Danh sách sản phẩm</span>
+                        </a>
                     </li>
                     <li class="menu-list">
                         <a href="@Url.Action("NhapHang","QuanLySanPham")">
-                            <i class="fa fa-edit" style="font-size:30px"></i>
+                            <img src="~/Assets/AssetsAdmin/images/right.png" alt="logo-icon">
                             <span>Nhập hàng</span>
                         </a>
                     </li>
-                    <li><a href="pricing.html"><i class="fa fa-table"></i> <span>Pricing tables</span></a></li>
-                    <li><a href="blocks.html"><i class="fa fa-th"></i> <span>Content blocks</span></a></li>
-                    <li><a href="forms.html"><i class="fa fa-file-text"></i> <span>Forms</span></a></li>
+                    <li>
+                        <a href="@Url.Action("Index","NhaCCs")">
+                            <img src="~/Assets/AssetsAdmin/images/right.png" alt="logo-icon">
+                            <span>Nhà cung cấp</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="@Url.Action("Index","LoaiSPs")">
+                            <img src="~/Assets/AssetsAdmin/images/right.png" alt="logo-icon">
+                            <span>Loại hàng</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="@Url.Action("Index","SanPhams")">
+                            <img src="~/Assets/AssetsAdmin/images/right.png" alt="logo-icon">
+                            <span>Mặt hàng</span>
+                        </a>
+                    </li>
                 </ul>
                 <!-- //sidebar nav end -->
                 <!-- toggle button start -->
