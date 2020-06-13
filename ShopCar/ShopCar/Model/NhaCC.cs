@@ -11,6 +11,7 @@ namespace ShopCar.Model
 {
     using System;
     using System.Collections.Generic;
+    using System.ComponentModel;
     using System.ComponentModel.DataAnnotations;
 
     public partial class NhaCC
@@ -21,8 +22,10 @@ namespace ShopCar.Model
             this.PhieuNhaps = new HashSet<PhieuNhap>();
         }
 
-        [StringLength(5, ErrorMessage = "Không được quá 5 kí tự ! ")]
-        [Required(ErrorMessage = "Mã nhà cung cấp không được để trống !")]
+        // [StringLength(5, ErrorMessage = "Không được quá 5 kí tự ! ")]
+        //[Key]
+        //[StringLength(5, MinimumLength = 5, ErrorMessage = "Mã nhà cung cấp phải là 5 kí tự ")]
+        //[Required(ErrorMessage = "Mã nhà cung cấp không được để trống !")]
         public string MaNCC { get; set; }
         [Required(ErrorMessage = "Tên nhà cung cấp không được để trống !")]
         public string TenNCC { get; set; }
@@ -32,7 +35,11 @@ namespace ShopCar.Model
         [StringLength(11, MinimumLength = 6, ErrorMessage = "Số kí tự cho SĐT thuộc [6-11] ")]
         [Range(0, int.MaxValue, ErrorMessage = "Số điện thoại không được chứa chữ")]
         public string SDT { get; set; }
-        [Required(ErrorMessage = "Email không được để trống !")]
+        
+        [Required(ErrorMessage = "Email không được để trống")]
+        [DataType(DataType.EmailAddress)]        
+        [MaxLength(30)]
+        [RegularExpression(@"[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}", ErrorMessage = "vui lòng nhập email đúng!")]
         public string Email { get; set; }
       
 

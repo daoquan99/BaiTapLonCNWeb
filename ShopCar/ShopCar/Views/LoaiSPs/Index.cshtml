@@ -13,17 +13,23 @@
 <table class="table">
     <tr>
         <th>
-            Tên loại 
+            Mã loại
         </th>
         <th>
-           @* @Html.DisplayNameFor(model => model.MoTa)*@
+            Tên loại
+        </th>
+        <th>
+            @* @Html.DisplayNameFor(model => model.MoTa)*@
             Mô tả
         </th>
         <th></th>
     </tr>
 
 @foreach (var item in Model) {
-<tr>   
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.MaLoaiSP)
+    </td>
     <td>
         @Html.DisplayFor(modelItem => item.TenLoai)
     </td>

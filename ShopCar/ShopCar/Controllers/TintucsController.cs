@@ -50,6 +50,20 @@ namespace ShopCar.Controllers
         {
             if (ModelState.IsValid)
             {
+                string duoiID = "";
+                if (db.Tintucs.ToList().Count() < 10 && db.Tintucs.ToList().Count() >= 1)
+                {
+                    duoiID = "000" + Convert.ToString(db.Tintucs.ToList().Count() + 1);
+                }
+                else if (db.Tintucs.ToList().Count() >= 10 && db.Tintucs.ToList().Count() < 100)
+                {
+                    duoiID = "00" + Convert.ToString(db.Tintucs.ToList().Count() + 1);
+                }
+                else if (db.Tintucs.ToList().Count() == 0)
+                {
+                    duoiID = "0001";
+                }
+                tintuc.MaTin = "T" + duoiID;
                 db.Tintucs.Add(tintuc);
                 db.SaveChanges();
                 return RedirectToAction("Index");

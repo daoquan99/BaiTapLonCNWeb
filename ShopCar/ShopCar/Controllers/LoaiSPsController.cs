@@ -50,6 +50,20 @@ namespace ShopCar.Controllers
         {
             if (ModelState.IsValid)
             {
+                string duoiID = "";
+                if (db.LoaiSPs.ToList().Count() < 10 && db.LoaiSPs.ToList().Count() >= 1)
+                {
+                    duoiID = "000" + Convert.ToString(db.LoaiSPs.ToList().Count() + 1);
+                }
+                else if (db.LoaiSPs.ToList().Count() >= 10 && db.LoaiSPs.ToList().Count() < 100)
+                {
+                    duoiID = "00" + Convert.ToString(db.LoaiSPs.ToList().Count() + 1);
+                }
+                else if (db.LoaiSPs.ToList().Count() == 0)
+                {
+                    duoiID = "0001";
+                }
+                loaiSP.MaLoaiSP = "L" + duoiID;
                 db.LoaiSPs.Add(loaiSP);
                 db.SaveChanges();
                 return RedirectToAction("Index");

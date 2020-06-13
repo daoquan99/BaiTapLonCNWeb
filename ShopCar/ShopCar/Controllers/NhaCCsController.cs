@@ -49,7 +49,23 @@ namespace ShopCar.Controllers
         public ActionResult Create([Bind(Include = "MaNCC,TenNCC,DiaChi,SDT,Email")] NhaCC nhaCC)
         {
             if (ModelState.IsValid)
+
             {
+
+                string duoiID = "";
+                if (db.NhaCCs.ToList().Count() < 10 && db.NhaCCs.ToList().Count() >= 1)
+                {
+                    duoiID = "000" + Convert.ToString(db.NhaCCs.ToList().Count() + 1);
+                }
+                else if (db.NhaCCs.ToList().Count() >= 10 && db.NhaCCs.ToList().Count() < 100)
+                {
+                    duoiID = "00" + Convert.ToString(db.NhaCCs.ToList().Count() + 1);
+                }
+                else if (db.NhaCCs.ToList().Count() == 0)
+                {
+                    duoiID = "0001";
+                }
+                nhaCC.MaNCC = "N" + duoiID;
                 db.NhaCCs.Add(nhaCC);
                 db.SaveChanges();
                 return RedirectToAction("Index");
