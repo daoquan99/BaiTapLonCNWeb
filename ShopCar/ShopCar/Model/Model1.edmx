@@ -480,8 +480,6 @@
           <NavigationProperty Name="CTHoaDons" Relationship="CarShopModel.FK__CTHoaDon__MaSP__6754599E" FromRole="SanPham" ToRole="CTHoaDon" />
           <NavigationProperty Name="CTPhieuNhaps" Relationship="CarShopModel.FK__CTPhieuNha__MaSP__6383C8BA" FromRole="SanPham" ToRole="CTPhieuNhap" />
           <NavigationProperty Name="LoaiSP" Relationship="CarShopModel.FK__SanPham__MaLoaiS__68487DD7" FromRole="SanPham" ToRole="LoaiSP" />
-          <NavigationProperty Name="SanPham1" Relationship="CarShopModel.FK_Sheet1__Sheet1_" FromRole="SanPham" ToRole="SanPham1" />
-          <NavigationProperty Name="SanPham2" Relationship="CarShopModel.FK_Sheet1__Sheet1_" FromRole="SanPham1" ToRole="SanPham" />
         </EntityType>
         <EntityType Name="Tintuc">
           <Key>

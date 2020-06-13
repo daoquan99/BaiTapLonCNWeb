@@ -35,7 +35,5 @@ namespace ShopCar.Model
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CTPhieuNhap> CTPhieuNhaps { get; set; }
         public virtual LoaiSP LoaiSP { get; set; }
-        public virtual SanPham SanPham1 { get; set; }
-        public virtual SanPham SanPham2 { get; set; }
     }
 }
