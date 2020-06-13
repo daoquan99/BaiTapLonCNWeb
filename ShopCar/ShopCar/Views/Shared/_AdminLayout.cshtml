@@ -26,7 +26,7 @@
 
             <!-- logo start -->
             <div class="logo">
-                <h1><a href="index.html">Collective</a></h1>
+                <h1><a href="@Url.Action("Index","Admin")">Trang chủ</a></h1>
             </div>
           
             <div class="logo-icon text-center">
@@ -62,12 +62,12 @@
                             <span>Phiếu Nhập</span>
                         </a>
                     </li>
-                    <li>
+                    @*<li>
                         <a href="@Url.Action("Index","CTPhieuNhaps")">
                             <img src="~/Assets/AssetsAdmin/images/right.png" alt="logo-icon">
                             <span>Chi Tiết Phiếu Nhập</span>
                         </a>
-                    </li>
+                    </li>*@
                     <li>
                         <a href="@Url.Action("Index","LoaiSPs")">
                             <img src="~/Assets/AssetsAdmin/images/right.png" alt="logo-icon">
@@ -90,8 +90,13 @@
                 <!-- //sidebar nav end -->
                 <!-- toggle button start -->
                 <a class="toggle-btn">
-                    <i class="fa fa-angle-double-left menu-collapsed__left"><span>Collapse Sidebar</span></i>
-                    <i class="fa fa-angle-double-right menu-collapsed__right"></i>
+
+                    <i class="">
+                        <img src="~/Assets/AssetsAdmin/images/right.png" alt="logo-icon">
+                    </i>
+                    <i class="fa menu-collapsed__left">
+                        <span>Thu lại</span>
+                    </i>
                 </a>
                 <!-- //toggle button end -->
             </div>

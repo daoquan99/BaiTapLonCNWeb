@@ -71,6 +71,7 @@ namespace ShopCar.Controllers
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
             CTPhieuNhap cTPhieuNhap = db.CTPhieuNhaps.Find(id);
+           
             if (cTPhieuNhap == null)
             {
                 return HttpNotFound();

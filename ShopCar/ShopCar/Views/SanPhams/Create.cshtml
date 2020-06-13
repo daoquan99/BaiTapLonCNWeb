@@ -78,7 +78,9 @@
                   <input type="file" name="URLAnh" id="c" class="btn-danger" />
         </div>*@
 
-            
+          
+
+
             @Html.EditorFor(model => model.URLAnh, new { htmlAttributes = new { @class = "form-control" } })
             @Html.ValidationMessageFor(model => model.URLAnh, "", new { @class = "text-danger" })
             
