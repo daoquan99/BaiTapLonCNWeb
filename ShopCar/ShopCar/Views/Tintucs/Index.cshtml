@@ -5,10 +5,10 @@
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-<h2>Index</h2>
+<h2>Quản lý tin tức</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Tạo mới", "Create")
 </p>
 <table class="table">
     <tr>
@@ -16,7 +16,7 @@
             @Html.DisplayNameFor(model => model.URLAnh)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.NoiDung)
+           Nội Dung
         </th>
         <th></th>
     </tr>
@@ -30,9 +30,9 @@
             @Html.DisplayFor(modelItem => item.NoiDung)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.MaTin }) |
-            @Html.ActionLink("Details", "Details", new { id=item.MaTin }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.MaTin })
+            @Html.ActionLink("Sửa", "Edit", new { id=item.MaTin }) |
+            @Html.ActionLink("Xem", "Details", new { id=item.MaTin }) |
+            @Html.ActionLink("Xóa", "Delete", new { id=item.MaTin })
         </td>
     </tr>
 }

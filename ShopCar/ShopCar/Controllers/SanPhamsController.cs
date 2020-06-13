@@ -57,10 +57,14 @@ namespace ShopCar.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "MaSP,TenSP,SoLuong,DonGia,MoTa,GiaKm,URLAnh,MaLoaiSP")] SanPham sanPham)
+        public ActionResult Create([Bind(Include = "MaSP,TenSP,SoLuong,DonGia,MoTa,GiaKm,URLAnh,MaLoaiSP")] SanPham sanPham)//,HttpPostedFileBase anh)
         {
             if (ModelState.IsValid)
             {
+                //string filename = System.IO.Path.GetFileName(anh.FileName);
+                //anh.SaveAs(filename);
+                //sanPham.URLAnh = filename;
+                
                 db.SanPhams.Add(sanPham);
                 db.SaveChanges();
                 return RedirectToAction("Index");

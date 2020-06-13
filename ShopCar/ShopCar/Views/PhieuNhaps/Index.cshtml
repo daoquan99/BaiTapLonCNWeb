@@ -16,6 +16,9 @@
             Xem chi tiết
         </th>
         <th>
+            Mã phiếu nhập
+        </th>
+        <th>
             @*  @Html.DisplayNameFor(model => model.NgayNhap)*@
             Mã nhà cung cấp
         </th>
@@ -23,7 +26,7 @@
             @*  @Html.DisplayNameFor(model => model.NhaCC.TenNCC)*@
             Tên nhà cung cấp
         </th>
-        <th>           
+        <th>
             Ngày nhập
         </th>
         <th></th>
@@ -33,6 +36,9 @@
 <tr>
     <td>
         @Html.ActionLink("Xem", "Details", new { id = item.MaPN })
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.MaPN)
     </td>
     <td>
         @Html.DisplayFor(modelItem => item.NhaCC.MaNCC)

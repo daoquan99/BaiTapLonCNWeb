@@ -5,10 +5,10 @@
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-<h2>Details</h2>
+<h2>Chi tiết</h2>
 
 <div>
-    <h4>Tintuc</h4>
+    <h4>Tin tức</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
@@ -20,7 +20,7 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.NoiDung)
+            Nội dung
         </dt>
 
         <dd>
@@ -30,6 +30,6 @@
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.MaTin }) |
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Sửa", "Edit", new { id = Model.MaTin }) |
+    @Html.ActionLink("Quay lại danh sách", "Index")
 </p>
