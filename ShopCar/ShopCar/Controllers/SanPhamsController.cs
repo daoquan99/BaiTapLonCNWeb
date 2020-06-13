@@ -4,8 +4,12 @@ using System.Data;
 using System.Data.Entity;
 using System.Linq;
 using System.Net;
+using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Services.Description;
+using Microsoft.Ajax.Utilities;
 using ShopCar.Model;
 
 namespace ShopCar.Controllers
@@ -17,8 +21,11 @@ namespace ShopCar.Controllers
         // GET: SanPhams
         public ActionResult Index()
         {
-            var sanPhams = db.SanPhams.Include(s => s.LoaiSP).Include(s => s.SanPham1).Include(s => s.SanPham2);
-            return View(sanPhams.ToList());
+
+            //  var sanPhams = db.SanPhams.Include(s => s.LoaiSP).Include(s => s.SanPham1).Include(s => s.SanPham2);
+            var sanPhams = db.SanPhams.Include(s => s.LoaiSP);
+               return View(sanPhams.ToList());
+           // return View();
         }
 
         // GET: SanPhams/Details/5

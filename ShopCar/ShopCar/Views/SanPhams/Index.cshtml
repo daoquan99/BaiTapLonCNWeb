@@ -33,12 +33,12 @@
         <th>
             @Html.DisplayNameFor(model => model.LoaiSP.TenLoai)
         </th>
-        <th>
+        @*<th>
             @Html.DisplayNameFor(model => model.SanPham1.TenSP)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.SanPham2.TenSP)
-        </th>
+        </th>*@
         <th></th>
     </tr>
 
@@ -65,12 +65,12 @@
         <td>
             @Html.DisplayFor(modelItem => item.LoaiSP.TenLoai)
         </td>
-        <td>
+        @*<td>
             @Html.DisplayFor(modelItem => item.SanPham1.TenSP)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.SanPham2.TenSP)
-        </td>
+        </td>*@
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.MaSP }) |
             @Html.ActionLink("Details", "Details", new { id=item.MaSP }) |
