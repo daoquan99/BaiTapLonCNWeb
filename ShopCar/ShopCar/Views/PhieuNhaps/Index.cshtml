@@ -5,36 +5,44 @@
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-<h2>Index</h2>
+    <h2>Quản lý phiếu nhập</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Tạo mới", "Create")
 </p>
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.NgayNhap)
+            Xem chi tiết
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.NhaCC.TenNCC)
+            @*  @Html.DisplayNameFor(model => model.NgayNhap)*@
+            Ngày nhập
+        </th>
+        <th>
+            @*  @Html.DisplayNameFor(model => model.NhaCC.TenNCC)*@
+            Tên nhà cung cấp
         </th>
         <th></th>
     </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.NgayNhap)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.NhaCC.TenNCC)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.MaPN }) |
-            @Html.ActionLink("Details", "Details", new { id=item.MaPN }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.MaPN })
-        </td>
-    </tr>
-}
+        @foreach (var item in Model) {
+<tr>
+    <td>
+        @Html.ActionLink("Xem", "Details", new { id = item.MaPN }) 
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.NgayNhap)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.NhaCC.TenNCC)
+    </td>
+    <td>
+        @Html.ActionLink("Sửa", "Edit", new { id = item.MaPN }) |
+       
+        @Html.ActionLink("Xóa", "Delete", new { id = item.MaPN })
+    </td>
+</tr>
+        }
 
-</table>
+        </table>

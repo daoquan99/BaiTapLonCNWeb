@@ -28,9 +28,9 @@
             <div class="logo">
                 <h1><a href="index.html">Collective</a></h1>
             </div>
-
+          
             <div class="logo-icon text-center">
-                <a href="" title="Trang chủ"><img src="~/Assets/AssetsAdmin/images/logo.png" alt="logo-icon"> </a>
+                <a href="@Url.Action("Index","Admin")" title="Trang chủ"><img src="~/Assets/AssetsAdmin/images/logo.png" alt="logo-icon"> </a>
             </div>
             <!-- //logo end -->
 
@@ -39,17 +39,17 @@
                 <!-- sidebar nav start -->
                 <ul class="nav nav-pills nav-stacked custom-nav">
                     @*<li class="active">
-                        <a href="@Url.Action("Index","QuanLySanPham")">
-                            <img src="~/Assets/AssetsAdmin/images/right.png" alt="logo-icon">
-                            <span>Danh sách sản phẩm</span>
-                        </a>
-                    </li>
-                    <li class="menu-list">
-                        <a href="@Url.Action("NhapHang","QuanLySanPham")">
-                            <img src="~/Assets/AssetsAdmin/images/right.png" alt="logo-icon">
-                            <span>Nhập hàng</span>
-                        </a>
-                    </li>*@
+                    <a href="@Url.Action("Index","QuanLySanPham")">
+                        <img src="~/Assets/AssetsAdmin/images/right.png" alt="logo-icon">
+                        <span>Danh sách sản phẩm</span>
+                    </a>
+                </li>
+                <li class="menu-list">
+                    <a href="@Url.Action("NhapHang","QuanLySanPham")">
+                        <img src="~/Assets/AssetsAdmin/images/right.png" alt="logo-icon">
+                        <span>Nhập hàng</span>
+                    </a>
+                </li>*@
                     <li>
                         <a href="@Url.Action("Index","NhaCCs")">
                             <img src="~/Assets/AssetsAdmin/images/right.png" alt="logo-icon">
@@ -253,7 +253,7 @@
 
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb my-breadcrumb">
-                        <li class="breadcrumb-item"><a href="">Trang chủ</a></li>
+                        <li class="breadcrumb-item"><a href="@Url.Action("Index","Admin")">Trang chủ</a></li>
                         <li class="breadcrumb-item active" aria-current="page">Bảng điều khiển</li>
                     </ol>
                 </nav>

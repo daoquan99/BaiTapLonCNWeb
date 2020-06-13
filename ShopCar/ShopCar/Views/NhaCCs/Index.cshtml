@@ -5,48 +5,57 @@
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-<h2>Index</h2>
+<h2>Quản lý nhà cung cấp</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Tạo mới", "Create")
 </p>
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.TenNCC)
+          Xem chi tiết
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.DiaChi)
+            @* @Html.DisplayNameFor(model => model.TenNCC)*@
+            Tên nhà cung cấp
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.SDT)
+            @* @Html.DisplayNameFor(model => model.DiaChi)*@
+            Địa chỉ
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Email)
+            @* @Html.DisplayNameFor(model => model.SDT)*@
+            Liên hệ
+        </th>
+        <th>
+            @*@Html.DisplayNameFor(model => model.Email)*@
+            Email
         </th>
         <th></th>
     </tr>
 
 @foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.TenNCC)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.DiaChi)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.SDT)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Email)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.MaNCC }) |
-            @Html.ActionLink("Details", "Details", new { id=item.MaNCC }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.MaNCC })
-        </td>
-    </tr>
+<tr>
+    <td>
+        @Html.ActionLink("Xem", "Details", new { id = item.MaNCC }) 
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.TenNCC)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.DiaChi)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.SDT)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Email)
+    </td>
+    <td>
+        @Html.ActionLink("Sửa", "Edit", new { id = item.MaNCC }) |        
+        @Html.ActionLink("Xóa", "Delete", new { id = item.MaNCC })
+    </td>
+</tr>
 }
 
 </table>
