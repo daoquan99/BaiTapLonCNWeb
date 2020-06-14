@@ -29,6 +29,7 @@ namespace ShopCar.Controllers
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
             PhieuNhap phieuNhap = db.PhieuNhaps.Find(id);
+          
             if (phieuNhap == null)
             {
                 return HttpNotFound();
@@ -52,6 +53,20 @@ namespace ShopCar.Controllers
         {
             if (ModelState.IsValid)
             {
+                string duoiID = "";
+                if (db.PhieuNhaps.ToList().Count() < 10 && db.PhieuNhaps.ToList().Count() >= 1)
+                {
+                    duoiID = "000" + Convert.ToString(db.PhieuNhaps.ToList().Count() + 1);
+                }
+                else if (db.PhieuNhaps.ToList().Count() >= 10 && db.PhieuNhaps.ToList().Count() < 100)
+                {
+                    duoiID = "00" + Convert.ToString(db.PhieuNhaps.ToList().Count() + 1);
+                }
+                else if (db.PhieuNhaps.ToList().Count() == 0)
+                {
+                    duoiID = "0001";
+                }
+               phieuNhap.MaPN = "P" + duoiID;
                 db.PhieuNhaps.Add(phieuNhap);
                 db.SaveChanges();
                 return RedirectToAction("Index");

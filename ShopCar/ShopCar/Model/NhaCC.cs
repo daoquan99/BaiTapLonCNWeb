@@ -32,8 +32,11 @@ namespace ShopCar.Model
         [Required(ErrorMessage = "Địa Chỉ không được để trống !")]
         public string DiaChi { get; set; }
         [Required(ErrorMessage = "SĐT không được để trống !")]
-        [StringLength(11, MinimumLength = 6, ErrorMessage = "Số kí tự cho SĐT thuộc [6-11] ")]
-        [Range(0, int.MaxValue, ErrorMessage = "Số điện thoại không được chứa chữ")]
+       // [StringLength(11, MinimumLength = 6, ErrorMessage = "Số kí tự cho SĐT thuộc [6-11] ")]
+        //[Range(0, int.MaxValue, ErrorMessage = "Số điện thoại không được chứa chữ")]
+        [DataType(DataType.PhoneNumber)]
+      //  [RegularExpression(@"^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$", ErrorMessage = "Số điện thoại chứa 10 chữ số!")]
+      [Phone]
         public string SDT { get; set; }
         
         [Required(ErrorMessage = "Email không được để trống")]

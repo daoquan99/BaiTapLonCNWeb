@@ -20,7 +20,7 @@ namespace ShopCar.Controllers
             var cTPhieuNhaps = db.CTPhieuNhaps.Include(c => c.PhieuNhap).Include(c => c.SanPham);
             return View(cTPhieuNhaps.ToList());
         }
-
+    
         // GET: CTPhieuNhaps/Details/5
         public ActionResult Details(string id)
         {
@@ -28,12 +28,16 @@ namespace ShopCar.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            CTPhieuNhap cTPhieuNhap = db.CTPhieuNhaps.Find(id);
+
+            CTPhieuNhap cTPhieuNhap = db.CTPhieuNhaps.SingleOrDefault(c => c.MaPN == id);
+         //   CTPhieuNhap cTPhieuNhap = db.CTPhieuNhaps.Find(id);
             if (cTPhieuNhap == null)
             {
                 return HttpNotFound();
             }
+           
             return View(cTPhieuNhap);
+         
         }
 
         // GET: CTPhieuNhaps/Create
