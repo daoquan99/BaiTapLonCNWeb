@@ -6,14 +6,7 @@
     <div class="hover_category">
 
         @Html.DropDownList("MaLoaiSP", (IEnumerable<SelectListItem>)ViewBag.lstLoaiSP, new { @class = "select_option" })
-        @*<select class="select_option" name="select" id="categori2">
-            <option selected value="1">Tất cả danh mục</option>
-            @foreach (var item in lstLoaiSP)
-            {
-                Html.Hidden("MaLoaiSP", item.MaLoaiSP);
-                <option value="@item.MaLoaiSP">@item.TenLoai</option>
-            }
-        </select>*@
+        
     </div>
     <div class="search_box">
         <input type="text" name="sTuKhoa" placeholder="Nhập tên sản phẩm" />

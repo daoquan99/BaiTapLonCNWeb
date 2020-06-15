@@ -16,6 +16,25 @@ namespace ShopCar
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+
+            Application["SoNguoiTruyCap"] = 0;
+            Application["SoNguoiDangOnline"] = 0;
+        }
+
+        protected void Session_Start()
+        {
+            Application.Lock();
+            Application["SoNguoiTruyCap"] = (int)Application["SoNguoiTruyCap"] + 1;
+            Application["SoNguoiDangOnline"] = (int)Application["SoNguoiDangOnline"] + 1;
+
+            Application.UnLock();
+        }
+
+        protected void Session_End()
+        {
+            Application.Lock();
+            Application["SoNguoiDangOnline"] = (int)Application["SoNguoiDangOnline"] - 1;
+            Application.UnLock();
         }
     }
 }
