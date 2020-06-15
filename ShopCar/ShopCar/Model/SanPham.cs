@@ -39,9 +39,9 @@ namespace ShopCar.Model
         [Range(0, int.MaxValue, ErrorMessage = "Giá KM không được chứa chữ")]
        
         public Nullable<decimal> GiaKm { get; set; }
-       // [DataType(DataType.ImageUrl)]
-      //[DataType(DataType.Url)]
-        
+        // [DataType(DataType.ImageUrl)]
+        //[DataType(DataType.Url)]
+       
         public string URLAnh { get; set; }
 
         public string MaLoaiSP { get; set; }

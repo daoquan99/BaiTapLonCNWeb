@@ -34,7 +34,49 @@ namespace ShopCar.Controllers
             }
             return View(tintuc);
         }
+        private bool idHasExist(string id)
+        {
+            Tintuc temp = db.Tintucs.Find(id);
+            if (temp == null)
+            {
+                return false;
+            }
 
+            return true;
+        }
+        private string autoID()
+        {
+            string id = "";
+            int dem = db.Tintucs.ToList().Count();
+            while (true)
+            {
+                if (dem < 10 && dem >= 1)
+                {
+                    id = "T000" + Convert.ToString(dem + 1);
+                }
+                else if (dem >= 10 && dem < 100)
+                {
+                    id = "T00" + Convert.ToString(dem + 1);
+                }
+                else if (dem >= 100)
+                {
+                    id = "T0" + Convert.ToString(dem + 1);
+                }
+                else if (dem == 0)
+                {
+                    id = "T0001";
+                }
+                if (idHasExist(id) == false)
+                {
+                    break;
+                }
+                else
+                {
+                    dem++;
+                }
+            }
+            return id;
+        }
         // GET: Tintucs/Create
         public ActionResult Create()
         {
@@ -50,20 +92,7 @@ namespace ShopCar.Controllers
         {
             if (ModelState.IsValid)
             {
-                string duoiID = "";
-                if (db.Tintucs.ToList().Count() < 10 && db.Tintucs.ToList().Count() >= 1)
-                {
-                    duoiID = "000" + Convert.ToString(db.Tintucs.ToList().Count() + 1);
-                }
-                else if (db.Tintucs.ToList().Count() >= 10 && db.Tintucs.ToList().Count() < 100)
-                {
-                    duoiID = "00" + Convert.ToString(db.Tintucs.ToList().Count() + 1);
-                }
-                else if (db.Tintucs.ToList().Count() == 0)
-                {
-                    duoiID = "0001";
-                }
-                tintuc.MaTin = "T" + duoiID;
+                tintuc.MaTin = autoID();
                 db.Tintucs.Add(tintuc);
                 db.SaveChanges();
                 return RedirectToAction("Index");

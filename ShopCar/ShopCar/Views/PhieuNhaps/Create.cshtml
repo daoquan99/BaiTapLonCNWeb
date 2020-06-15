@@ -7,38 +7,38 @@
 
 <h2>Tạo mới</h2>
 
-@using (Html.BeginForm()) 
+@using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
-    
+
     <div class="form-horizontal">
         <h4>Thông tin phiếu nhập</h4>
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-    @*<div class="form-group">
-        <div class="control-label col-md-2"> Mã phiếu nhập</div>
-      
-        <div class="col-md-10">
-            @Html.EditorFor(model => model.MaPN, new { htmlAttributes = new { @class = "form-control" } })
-            @Html.ValidationMessageFor(model => model.MaPN, "", new { @class = "text-danger" })
-        </div>
-    </div>*@
+        @*<div class="form-group">
+                <div class="control-label col-md-2"> Mã phiếu nhập</div>
 
-    <div class="form-group">
-        <div class="control-label col-md-2"> Ngày nhập</div>
-        <div class="col-md-10">
-            @Html.EditorFor(model => model.NgayNhap, new { htmlAttributes = new { @class = "form-control" } })
-            @Html.ValidationMessageFor(model => model.NgayNhap, "", new { @class = "text-danger" })
-        </div>
-    </div>
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.MaPN, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.MaPN, "", new { @class = "text-danger" })
+                </div>
+            </div>*@
 
-    <div class="form-group">
-        <div class="control-label col-md-2"> Nhà cung cấp</div>
-        <div class="col-md-10">
-            @Html.DropDownList("MaNCC", null, htmlAttributes: new { @class = "form-control" })
-            @Html.ValidationMessageFor(model => model.MaNCC, "", new { @class = "text-danger" })
+        <div class="form-group">
+            <div class="control-label col-md-2"> Ngày nhập</div>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.NgayNhap, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.NgayNhap, "", new { @class = "text-danger" })
+            </div>
         </div>
-    </div>
+
+        <div class="form-group">
+            <div class="control-label col-md-2"> Nhà cung cấp</div>
+            <div class="col-md-10">
+                @Html.DropDownList("MaNCC", null, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.MaNCC, "", new { @class = "text-danger" })
+            </div>
+        </div>
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
@@ -47,7 +47,9 @@
         </div>
     </div>
 }
-
+<a href="@Url.Action("Create","CTPhieuNhaps")">  
+    <span>Chi Tiết Phiếu Nhập</span>
+</a>
 <div>
     @Html.ActionLink("Quay lại danh sách", "Index")
 </div>

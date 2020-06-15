@@ -34,7 +34,49 @@ namespace ShopCar.Controllers
             }
             return View(loaiSP);
         }
+        private bool idHasExist(string id)
+        {
+            LoaiSP temp = db.LoaiSPs.Find(id);
+            if (temp == null)
+            {
+                return false;
+            }
 
+            return true;
+        }
+        private string autoID()
+        {
+            string id = "";
+            int dem = db.LoaiSPs.ToList().Count();
+            while (true)
+            {
+                if (dem < 10 && dem >= 1)
+                {
+                    id = "L000" + Convert.ToString(dem + 1);
+                }
+                else if (dem >= 10 && dem < 100)
+                {
+                    id = "L00" + Convert.ToString(dem + 1);
+                }
+                else if (dem >= 100)
+                {
+                    id = "L0" + Convert.ToString(dem + 1);
+                }
+                else if (dem == 0)
+                {
+                    id = "L0001";
+                }
+                if (idHasExist(id) == false)
+                {
+                    break;
+                }
+                else
+                {
+                    dem++;
+                }
+            }
+            return id;
+        }
         // GET: LoaiSPs/Create
         public ActionResult Create()
         {
@@ -50,20 +92,8 @@ namespace ShopCar.Controllers
         {
             if (ModelState.IsValid)
             {
-                string duoiID = "";
-                if (db.LoaiSPs.ToList().Count() < 10 && db.LoaiSPs.ToList().Count() >= 1)
-                {
-                    duoiID = "000" + Convert.ToString(db.LoaiSPs.ToList().Count() + 1);
-                }
-                else if (db.LoaiSPs.ToList().Count() >= 10 && db.LoaiSPs.ToList().Count() < 100)
-                {
-                    duoiID = "00" + Convert.ToString(db.LoaiSPs.ToList().Count() + 1);
-                }
-                else if (db.LoaiSPs.ToList().Count() == 0)
-                {
-                    duoiID = "0001";
-                }
-                loaiSP.MaLoaiSP = "L" + duoiID;
+
+                loaiSP.MaLoaiSP = autoID();
                 db.LoaiSPs.Add(loaiSP);
                 db.SaveChanges();
                 return RedirectToAction("Index");

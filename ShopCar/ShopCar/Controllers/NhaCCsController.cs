@@ -6,6 +6,7 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using Microsoft.SqlServer.Server;
 using ShopCar.Model;
 
 namespace ShopCar.Controllers
@@ -40,7 +41,49 @@ namespace ShopCar.Controllers
         {
             return View();
         }
-
+        private bool idHasExist(string id)
+        {
+            NhaCC temp = db.NhaCCs.Find(id);
+            if (temp==null)
+            {
+                return false;
+            }
+            
+            return true;
+        }
+        private string autoID()
+        {
+            string id="";
+            int dem = db.NhaCCs.ToList().Count();
+            while (true)
+            {
+                if (dem < 10 && dem >= 1)
+                {
+                    id = "N000" + Convert.ToString(dem + 1);
+                }
+                else if (dem >= 10 && dem < 100)
+                {
+                    id = "N00" + Convert.ToString(dem + 1);
+                }
+                else if (dem >= 100 )
+                {
+                    id = "N0" + Convert.ToString(dem + 1);
+                }
+                else if (dem == 0)
+                {
+                    id = "N0001";
+                }
+                if (idHasExist(id) == false)
+                {
+                    break;
+                }
+                else
+                {
+                    dem++;
+                }                
+            }                  
+            return id;
+        }
         // POST: NhaCCs/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
@@ -50,22 +93,8 @@ namespace ShopCar.Controllers
         {
             if (ModelState.IsValid)
 
-            {
-
-                string duoiID = "";
-                if (db.NhaCCs.ToList().Count() < 10 && db.NhaCCs.ToList().Count() >= 1)
-                {
-                    duoiID = "000" + Convert.ToString(db.NhaCCs.ToList().Count() + 1);
-                }
-                else if (db.NhaCCs.ToList().Count() >= 10 && db.NhaCCs.ToList().Count() < 100)
-                {
-                    duoiID = "00" + Convert.ToString(db.NhaCCs.ToList().Count() + 1);
-                }
-                else if (db.NhaCCs.ToList().Count() == 0)
-                {
-                    duoiID = "0001";
-                }
-                nhaCC.MaNCC = "N" + duoiID;
+            {       
+                    nhaCC.MaNCC = autoID();                   
                 db.NhaCCs.Add(nhaCC);
                 db.SaveChanges();
                 return RedirectToAction("Index");

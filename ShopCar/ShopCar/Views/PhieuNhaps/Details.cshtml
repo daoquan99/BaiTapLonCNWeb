@@ -5,52 +5,56 @@
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
+@{
+    IEnumerable<ShopCar.Model.CTPhieuNhap> lstPN = (IEnumerable<ShopCar.Model.CTPhieuNhap>)ViewBag.lstPN;
+}
 <h2>Chi tiết</h2>
 
 <div>
     <h4>Phiếu nhập</h4>
 
     <hr />
-   
-        <dl class="dl-horizontal">
 
-            <dt>
-                Mã phiếu nhập
-            </dt>
-            <dd>
-                @Html.DisplayFor(model => model.MaPN)
-            </dd>
-            <dt>
-                Ngày nhập
-            </dt>
-            <dd>
-                @Html.DisplayFor(model => model.NgayNhap)
-            </dd>
+    <dl class="dl-horizontal">
 
-            <dt>
-                Nhà cung cấp
-            </dt>
+        <dt>
+            Mã phiếu nhập
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MaPN)
+        </dd>
+        <dt>
+            Ngày nhập
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.NgayNhap)
+        </dd>
 
-            <dd>
-                @Html.DisplayFor(model => model.NhaCC.TenNCC)
-            </dd>
-            <dt>
-                Mã nhà cung cấp
-            </dt>
+        <dt>
+            Nhà cung cấp
+        </dt>
 
-            <dd>
-                @Html.DisplayFor(model => model.NhaCC.MaNCC)
+        <dd>
+            @Html.DisplayFor(model => model.NhaCC.TenNCC)
+        </dd>
+        <dt>
+            Mã nhà cung cấp
+        </dt>
 
-            </dd>
+        <dd>
+            @Html.DisplayFor(model => model.NhaCC.MaNCC)
 
-        </dl>
-        
-    </div>
+        </dd>
 
+    </dl>
+
+</div>
+<h5>Các sản phẩm cung cấp</h5>
+    @Html.Partial("~/Views/PhieuNhaps/View.cshtml", lstPN)
 <p>
-    
+
     @Html.ActionLink("Sửa", "Edit", new { id = Model.MaPN }) |
 
-        
-        @Html.ActionLink("Quay lại danh sách", "Index")
+
+    @Html.ActionLink("Quay lại danh sách", "Index")
 </p>

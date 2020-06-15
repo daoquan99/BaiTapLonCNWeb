@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
@@ -42,7 +43,49 @@ namespace ShopCar.Controllers
             }
             return View(sanPham);
         }
+        private bool idHasExist(string id)
+        {
+            SanPham temp = db.SanPhams.Find(id);
+            if (temp == null)
+            {
+                return false;
+            }
 
+            return true;
+        }
+        private string autoID()
+        {
+            string id = "";
+            int dem = db.SanPhams.ToList().Count();
+            while (true)
+            {
+                if (dem < 10 && dem >= 1)
+                {
+                    id = "L000" + Convert.ToString(dem + 1);
+                }
+                else if (dem >= 10 && dem < 100)
+                {
+                    id = "L00" + Convert.ToString(dem + 1);
+                }
+                else if (dem >= 100)
+                {
+                    id = "L0" + Convert.ToString(dem + 1);
+                }
+                else if (dem == 0)
+                {
+                    id = "L0001";
+                }
+                if (idHasExist(id) == false)
+                {
+                    break;
+                }
+                else
+                {
+                    dem++;
+                }
+            }
+            return id;
+        }
         // GET: SanPhams/Create
         public ActionResult Create()
         {
@@ -57,16 +100,20 @@ namespace ShopCar.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "MaSP,TenSP,SoLuong,DonGia,MoTa,GiaKm,URLAnh,MaLoaiSP")] SanPham sanPham)//,HttpPostedFileBase anh)
+        public ActionResult Create([Bind(Include = "MaSP,TenSP,SoLuong,DonGia,MoTa,GiaKm,URLAnh,MaLoaiSP")] SanPham sanPham,HttpPostedFileBase anh)
         {
             if (ModelState.IsValid)
             {
-                //string filename = System.IO.Path.GetFileName(anh.FileName);
-                //anh.SaveAs(filename);
-                //sanPham.URLAnh = filename;
-                
+                if (anh!=null)
+                {
+                    var filename = Path.GetFileName(anh.FileName);
+                    var path = Path.Combine(Server.MapPath("~/images"), filename);
+                    anh.SaveAs(path);
+                    sanPham.URLAnh = filename;
+                }              
+                sanPham.MaSP = autoID();
                 db.SanPhams.Add(sanPham);
-                db.SaveChanges();
+                db.SaveChanges();            
                 return RedirectToAction("Index");
             }
 
@@ -91,6 +138,7 @@ namespace ShopCar.Controllers
             ViewBag.MaLoaiSP = new SelectList(db.LoaiSPs, "MaLoaiSP", "TenLoai", sanPham.MaLoaiSP);
             ViewBag.MaSP = new SelectList(db.SanPhams, "MaSP", "TenSP", sanPham.MaSP);
             ViewBag.MaSP = new SelectList(db.SanPhams, "MaSP", "TenSP", sanPham.MaSP);
+            //ViewBag.URLAnh = sanPham.URLAnh;
             return View(sanPham);
         }
 
@@ -99,14 +147,22 @@ namespace ShopCar.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "MaSP,TenSP,SoLuong,DonGia,MoTa,GiaKm,URLAnh,MaLoaiSP")] SanPham sanPham)
+        public ActionResult Edit([Bind(Include = "MaSP,TenSP,SoLuong,DonGia,MoTa,GiaKm,URLAnh,MaLoaiSP")] SanPham sanPham, HttpPostedFileBase anh)
         {
             if (ModelState.IsValid)
             {
+                if (anh != null)
+                {
+                    var filename = Path.GetFileName(anh.FileName);
+                    var path = Path.Combine(Server.MapPath("~/images"), filename);
+                    anh.SaveAs(path);
+                    sanPham.URLAnh = filename;
+                }
                 db.Entry(sanPham).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
+            
             ViewBag.MaLoaiSP = new SelectList(db.LoaiSPs, "MaLoaiSP", "TenLoai", sanPham.MaLoaiSP);
             ViewBag.MaSP = new SelectList(db.SanPhams, "MaSP", "TenSP", sanPham.MaSP);
             ViewBag.MaSP = new SelectList(db.SanPhams, "MaSP", "TenSP", sanPham.MaSP);

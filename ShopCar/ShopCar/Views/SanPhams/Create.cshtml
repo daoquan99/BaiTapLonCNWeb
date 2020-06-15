@@ -16,15 +16,7 @@
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
     <div class="form-group">
-        <div class="control-label col-md-2">Mã sản phẩm</div>
-        @*<div class="col-md-10">
-            @Html.DropDownList("MaSP", null, htmlAttributes: new { @class = "form-control" })
-            @Html.ValidationMessageFor(model => model.MaSP, "", new { @class = "text-danger" })
-        </div>*@
-        <div class="col-md-10">
-            @Html.EditorFor(model => model.MaSP, new { htmlAttributes = new { @class = "form-control" } })
-            @Html.ValidationMessageFor(model => model.MaSP, "", new { @class = "text-danger" })
-        </div>
+       
     </div>
 
     <div class="form-group">
@@ -68,22 +60,15 @@
     </div>
 
     <div class="form-group">
-       @* @Html.LabelFor(model => model.URLAnh, htmlAttributes: new { @class = "control-label col-md-2" })*@
+     
         <div class="control-label col-md-2">Chọn ảnh</div>
-        <div class="col-md-10">
-            @*  
-        <div class="custom-file">
-            <input type="file" class="form-control custom-file-input" />
-            <label class="custom-file-label">Chose file</label>
-                  <input type="file" name="URLAnh" id="c" class="btn-danger" />
-        </div>*@
+        <div class="col-md-10">                
+            @*<label for="URLanh" class="btn btn-primary btn-block btn-outlined">Chọn ảnh</label>*@
+            <input type="file" name="anh" id="URLanh" accept="image/*" class="btn-default" />
 
-          
+            @*@Html.EditorFor(model => model.URLAnh, new { htmlAttributes = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(model => model.URLAnh, "", new { @class = "text-danger" })*@
 
-
-            @Html.EditorFor(model => model.URLAnh, new { htmlAttributes = new { @class = "form-control" } })
-            @Html.ValidationMessageFor(model => model.URLAnh, "", new { @class = "text-danger" })
-            
 
         </div>
     </div>
