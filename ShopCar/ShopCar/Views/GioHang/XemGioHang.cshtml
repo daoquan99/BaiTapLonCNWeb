@@ -20,8 +20,7 @@ else
                 <div class="row">
                     <div class="col-12">
                         <div class="table_desc">
-                            @using (Html.BeginForm("CapNhatGioHang", "GioHang"))
-                            {
+                            <form action="/GioHang/CapNhatGioHang" method="post">
                                 <div class="cart_page table-responsive">
                                     <table>
                                         <thead>
@@ -58,7 +57,7 @@ else
                                                     <td class="product_quantity">
                                                         <label>Số lượng: </label>@item.SoLuong
                                                         @*@Html.TextBox("SoLuong", item.SoLuong, new { @class = "SoLuongThayDoi" })
-                                                        <p id="TB_SoLuongThayDoi" style="color:red;"></p>*@
+                                                            <p id="TB_SoLuongThayDoi" style="color:red;"></p>*@
                                                     </td>
 
                                                     <td class="product_total">
@@ -79,61 +78,58 @@ else
                                         </tbody>
                                     </table>
                                 </div>
-                                @*<div class="cart_submit">
-                                    <button type="submit">Cập nhật giỏ hàng</button>
-                                </div>*@
-                            }
+                            </form>
+                            @*@using (Html.BeginForm("CapNhatGioHang", "GioHang"))
+                                {
+
+                                    <div class="cart_submit">
+                                            <button type="submit">Cập nhật giỏ hàng</button>
+                                        </div>
+                                }*@
                         </div>
                     </div>
                 </div>
 
-
-                @using (Html.BeginForm("DatHang", "GioHang"))
-                {
-                    if (Session["TaiKhoan"] == null)
-                    {
-                        <div class="coupon_area col-9 TTCaNhan">
-                            <h3>Thông tin cá nhân</h3>
-                            <div class="row ">
-                                <div class="col-lg-6 col-md-6 register-top-grid">
-                                    <div class="coupon_code left ">
-                                        <div>
-                                            <span>Họ tên</span>
-                                            @Html.TextBox("TenKH")
-                                            <p id="tb_TenKH"></p>
-                                        </div>
-                                        <div>
-                                            <span>Địa chỉ</span>
-                                            @Html.TextBox("DiaChi")
-                                            <p id="tb_DiaChi"></p>
-                                        </div>
+                <form action="/GioHang/DatHang" method="post">
+                    <div class="coupon_area col-9 TTCaNhan">
+                        <h3>Thông tin cá nhân</h3>
+                        <div class="row ">
+                            <div class="col-lg-6 col-md-6 register-top-grid">
+                                <div class="coupon_code left ">
+                                    <div>
+                                        <span>Họ tên</span>
+                                        <input id="TenKH" name="TenKH" type="text" value="">
+                                        <p id="tb_TenKH"></p>
                                     </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 register-bottom-grid">
-                                    <div class="coupon_code right">
-                                        <div>
-                                            <span>Email</span>
-                                            @Html.TextBox("Email")
-                                            <p id="tb_Email"></p>
-                                        </div>
-                                        <div>
-                                            <span>Số điện thoại</span>
-                                            @Html.TextBox("SoDienThoai")
-                                            <p id="tb_SoDienThoai"></p>
-                                        </div>
-
+                                    <div>
+                                        <span>Địa chỉ</span>
+                                        <input id="DiaChi" name="DiaChi" type="text" value="">
+                                        <p id="tb_DiaChi"></p>
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-lg-6 col-md-6 register-bottom-grid">
+                                <div class="coupon_code right">
+                                    <div>
+                                        <span>Email</span>
+                                        <input id="Email" name="Email" type="text" value="">
+                                        <p id="tb_Email"></p>
+                                    </div>
+                                    <div>
+                                        <span>Số điện thoại</span>
+                                        <input id="SoDienThoai" name="SoDienThoai" type="text" value="">
+                                        <p id="tb_SoDienThoai"></p>
+                                    </div>
+
+                                </div>
+                            </div>
                         </div>
-                    }
-
-                    <div class="btnDatHang">
-                        <input type="submit" value="Đặt hàng" id="btnDatHang" class="btn btn-primary" />
-                        @Html.ActionLink("Mua tiếp", "Index", "Home", new { }, new { @class = "btn btn-success" })
                     </div>
-                }
-
+                    <div class="btnDatHang">
+                        <input type="submit" value="Đặt hàng" id="btnDatHang" class="btn btn-primary">
+                        <a class="btn btn-success" href="/Home">Mua tiếp</a>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
@@ -141,7 +137,7 @@ else
 <script>
     $("#btnDatHang").click(function () {
         var MaKH = $(".MaKh").val();
-        if (MaKH.length > 5 ) {
+        if (MaKH.length > 5) {
             $("#Ttb_MaKh").text("Mã Khách hàng không hợp lệ!")
             return false;
         }

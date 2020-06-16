@@ -11,21 +11,22 @@
                         {
                             KhachHang kh = (KhachHang)Session["TaiKhoan"];
                             <li>Chào @kh.TenKH</li>
-                            <li>@Html.ActionLink("Đăng xuất", "DangXuat", "Home")</li>
+                            <li><a href="/Home/DangXuat">Đăng xuất</a></li>
                         }
                         else
                         {
-                            <li style="display:inline;">@Html.ActionLink("Đăng ký", "DangKy", "Home")</li>
-                            <li style="display:inline;"><a class="lock" href="#" id="btnDangNhap">Đăng Nhâp</a></li>
-                            @*<li style="display:inline;"><a class="lock" href="~/Views/Home/DangKy.cshtml">Đăng ký</a></li>*@
+                            <li style="display:inline;"><a href="/Home/DangKy">Đăng ký</a></li>
+                            <li style="display:inline;"><a class="lock btnDangNhap" href="#" id="">Đăng Nhâp</a></li>
                         }
-                        <li>@Html.ActionLink("Giỏ Hàng", "XemGioHang", "GioHang")</li>
+                        <li><a href="/GioHang/XemGioHang">Giỏ Hàng</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+
 
 <link href="~/Content/cssLogin/style_Login.css" rel="stylesheet" />
 <div>
@@ -36,49 +37,26 @@
             </div>
             <h2>Đăng nhập</h2>
             <div class="form-info">
-                @using (Html.BeginForm("DangNhap", "Home"))
-                {
-                    <input type="text" class="txtTenDangNhap email" name="txtTenDangNhap" placeholder="Tài Khoản" required="" />
-                    <input type="password" class="txtMatKhau password" name="txtMatKhau" placeholder="Mật Khẩu" required="" />
+                <form action="/Home/DangNhap" method="post">
+                    <input type="text" class="txtTenDangNhap email" name="txtTenDangNhap" placeholder="Tài Khoản" required="">
+                    <input type="password" class="txtMatKhau password" name="txtMatKhau" placeholder="Mật Khẩu" required="">
                     <p><a href="#">Quên tài khoản?</a></p>
                     <ul class="login-buttons">
                         <li>
-                            <input type="submit" class="btnDangNhap" value="Đăng Nhập" />
+                            <input type="submit" class="btn_Dang_Nhap" value="Đăng Nhập">
                         </li>
-                        <li>
-                            <a href="@Url.Action("DangKy","Home")" class="hvr-sweep-to-left">Đăng ký</a>
+                        <li class="btn_DangKy" style="margin-left:auto;margin-right:auto;">
+                            <a href="/Home/DangKy" class="hvr-sweep-to-left ">Đăng ký</a>
                         </li>
                     </ul>
-                }
-
-                @*@using (Ajax.BeginForm("DangNhap","Home", new AjaxOptions
-        {
-            HttpMethod="post",
-            UpdateTargetId = "ThongBao",
-            InsertionMode = InsertionMode.Replace
-        })
-        )
-        {
-            <input type="text" class="txtTenDangNhap email" name="txtTenDangNhap" placeholder="Tài Khoản" required="" />
-            <input type="password" class="txtMatKhau password" name="txtMatKhau" placeholder="Mật Khẩu" required="" />
-            <p><a href="#">Quên tài khoản?</a></p>
-            <ul class="login-buttons">
-                <li>
-                    <input type="submit" class="btnDangNhap" value="Đăng Nhập" />
-                </li>
-                <li>
-                    <a href="@Url.Action("DangKy","Home")" class="hvr-sweep-to-left">Đăng ký</a>
-                </li>
-            </ul>
-            <div style="font-weight:bold;color:#ffff" id="ThongBao"></div>
-        }*@
+                </form>
             </div>
         </div>
     </div>
 </div>
 <script type="text/javascript">
     //hiển thị
-    $("#btnDangNhap").click(function () {
+    $(".btnDangNhap").click(function () {
         $("#popup_login").show();
     })
 
@@ -86,5 +64,13 @@
     $("#close_form").click(function () {
         $("#popup_login").hide();
     })
-
 </script>
+<style>
+    @@media only screen and (max-width: 1477px) {
+        li.btn_DangKy a{
+            opacity:0;
+            visibility:hidden;
+        }
+    }
+
+</style>

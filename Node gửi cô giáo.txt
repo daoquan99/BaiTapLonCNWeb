@@ -1,0 +1,10 @@
+- Nhóm 15 bọn em giờ còn 2 người là Đào Mạnh Quân và Nguyễn Duy Vũ
+
+- Tuần trước em: Đào Mạnh Quân có gửi bài cho cô chấm nhưng vì hôm đấy các bạn trong nhóm không ai up bài làm của mình lên git nên chỉ có mình em và hôm đấy e có hoàn thiện các chức năng bên phía người dùng như:
+trang chủ,đăng ký,đăng nhập, crud giỏ hàng,danh mục,tìm kiếm,sản phầm,chi tiết sản phẩm
+
+- Còn bên phía admin e chưa làm kịp ạ!
+
+- xong thì có thêm bạn Vũ xin vào nhóm làm cùng e. nên giờ 2 bọn e làm thêm phần admin
+
+- Em mong cô chấm lại bài cho e ạ!

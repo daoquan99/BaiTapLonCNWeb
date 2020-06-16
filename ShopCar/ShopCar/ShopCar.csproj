@@ -170,6 +170,11 @@
     <Compile Include="Model\LoaiSP.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Model\Metadata\KhachHang.cs" />
+    <Compile Include="Model\Metadata\LoaiSP.cs" />
+    <Compile Include="Model\Metadata\NhaCC.cs" />
+    <Compile Include="Model\Metadata\PhieuNhap.cs" />
+    <Compile Include="Model\Metadata\SanPham.cs" />
     <Compile Include="Model\Model1.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

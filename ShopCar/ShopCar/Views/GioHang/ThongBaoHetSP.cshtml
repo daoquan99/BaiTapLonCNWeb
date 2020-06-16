@@ -4,10 +4,12 @@
     Layout = "~/Views/Shared/_HomeLayout.cshtml";
 }
 
-<div style="height:500px">
-    <h2>
-        Số lượng sản phẩm trong kho không đủ vui lòng chỉnh sửa lại @Html.ActionLink("Giỏ hàng", "XemGioHang", "GioHang").
-        <br />Bạn có muốn đặt  @Html.ActionLink("Sản phẩm", "DanhSachSanPham", "SanPham") mới không?
-    </h2>
+<div class="container">
+    <div style="height:500px; margin-top:30px;" class="text-center">
+        <h2 style="line-height: 50px;">
+            Số lượng sản phẩm trong kho không đủ vui lòng chỉnh sửa lại <a href="/GioHang/XemGioHang" style="color:red;">Giỏ hàng</a>.
+            <br />Bạn có muốn đặt  <a href="/SanPham/DanhSachSanPham"  style="color:red;">Sản phẩm</a> mới không?
+        </h2>
+    </div>
 </div>
 

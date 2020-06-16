@@ -34,8 +34,7 @@
                                 {
                                     if (item.MaSP == Model.MaSP)
                                     {
-                                        using (Html.BeginForm("CapNhatGioHang", "GioHang"))
-                                        {
+                                        <form action="/GioHang/CapNhatGioHang" method="post">
                                             <tr>
                                                 <td class="product_name">
                                                     @Html.Hidden("MaSP", item.MaSP)
@@ -70,8 +69,7 @@
                                                     </a>
                                                 </td>
                                             </tr>
-                                        }
-
+                                        </form>
                                     }
 
                                     else
@@ -94,8 +92,7 @@
 
                                             <td class="product_quantity">
                                                 <label>Số lượng: </label> @item.SoLuong
-                                                @*@Html.TextBox("SoLuong", item.SoLuong, new { @class = "SoLuongThayDoi" })
-                                                    <p id="TB_SoLuongThayDoi" style="color:red;"></p>*@
+                                                
                                             </td>
 
                                             <td class="product_total">
@@ -132,14 +129,4 @@
         font-size: 15px;
     }
 </style>
-
-<script>
-    $("#btnCapNhapGH").click(function () {
-        var SoLuong = $(".SoLuongThayDoi").val();
-        if (isNaN(SoLuong) == true || SoLuong < 0) {
-            $("#TB_SoLuongThayDoi").text("Số lượng không hợp lệ!")
-            return false;
-        }
-    });
-</script>
 

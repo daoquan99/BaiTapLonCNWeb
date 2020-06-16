@@ -202,12 +202,14 @@ namespace ShopCar.Controllers
             {
                 //Đối với khách hàng chưa có tài khoản 
                 kh1 = kh;
+                int demKH = db.KhachHangs.Count();
+                kh1.MaKH = autoIDKH(demKH);
                 db.KhachHangs.Add(kh1);
                 db.SaveChanges();
             }
             else
             {
-                kh1 = db.KhachHangs.Single(x => x.MaKH == kh.MaKH);
+                kh1 = (KhachHang)Session["TaiKhoan"];
             }    
             HoaDon ddh = new HoaDon();
             TaoDonDatHang(ddh, kh1);
@@ -216,12 +218,15 @@ namespace ShopCar.Controllers
         }
         void TaoDonDatHang(HoaDon ddh, KhachHang kh1)
         {
+            int demDDH = db.HoaDons.Count();
+            ddh.MaHD = autoIDHD(demDDH);
             ddh.MaKH = kh1.MaKH;
             ddh.NgayDat = DateTime.Now;
             db.HoaDons.Add(ddh);
             db.SaveChanges();
 
             List<ItemGioHang> lstGioHang = LayGioHang();
+
             foreach (var item in lstGioHang)
             {
                 CTHoaDon ctdh = new CTHoaDon();
@@ -233,7 +238,40 @@ namespace ShopCar.Controllers
                 db.CTHoaDons.Add(ctdh);
                 db.SaveChanges();
             }
-            
+        }
+        private string autoIDKH(int dem)
+        {
+            string id = "";
+            if (dem < 9 && dem >= 0)
+            {
+                id = "KH00" + Convert.ToString(dem + 1);
+            }
+            else if (dem >= 9 && dem < 100)
+            {
+                id = "KH0" + Convert.ToString(dem + 1);
+            }
+            else if (dem >= 100)
+            {
+                id = "KH" + Convert.ToString(dem + 1);
+            }
+            return id;
+        }
+        private string autoIDHD(int dem)
+        {
+            string id = "";
+            if (dem < 9 && dem >= 0)
+            {
+                id = "HD00" + Convert.ToString(dem + 1);
+            }
+            else if (dem >= 9 && dem < 100)
+            {
+                id = "HD0" + Convert.ToString(dem + 1);
+            }
+            else if (dem >= 100)
+            {
+                id = "HD" + Convert.ToString(dem + 1);
+            }
+            return id;
         }
     }
 }

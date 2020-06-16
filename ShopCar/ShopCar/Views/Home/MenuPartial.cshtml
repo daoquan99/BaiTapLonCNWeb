@@ -1,16 +1,29 @@
 ﻿@using ShopCar.Model;
 @model LoaiSP
 
-@using (Html.BeginForm("LayTuKhoaTimKiem", "TimKiem", FormMethod.Post, new { @enctype = "multipart/form-data" }))
-{
-    <div class="hover_category">
+@{
+    IEnumerable<LoaiSP> lstLoaiSP = (IEnumerable<LoaiSP>)ViewBag.lstLoaiSP;
+}
 
-        @Html.DropDownList("MaLoaiSP", (IEnumerable<SelectListItem>)ViewBag.lstLoaiSP, new { @class = "select_option" })
-        
+<form action="/TimKiem/LayTuKhoaTimKiem" method="post">
+    <div class="hover_category">
+        <select class="select_option" id="MaLoaiSP" name="MaLoaiSP" style="display: none;">
+            @foreach (var item in lstLoaiSP)
+            {
+                <option value="@item.MaLoaiSP">@item.TenLoai</option>
+            }
+
+        </select>
+
     </div>
     <div class="search_box">
         <input type="text" name="sTuKhoa" placeholder="Nhập tên sản phẩm" />
         <button type="submit">Tìm kiếm</button>
     </div>
-}
+</form>
+
+@*@using (Html.BeginForm("LayTuKhoaTimKiem", "TimKiem"))
+    {
+
+    }*@
 

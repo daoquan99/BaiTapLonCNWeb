@@ -24,12 +24,10 @@ namespace ShopCar.Controllers
 
             return View();
         }
-        
         [ChildActionOnly]
-        [HttpGet]
         public ActionResult MenuPartial()
         {
-            ViewBag.lstLoaiSP = new SelectList(db.LoaiSPs, "MaLoaiSP", "TenLoai");
+            ViewBag.lstLoaiSP = db.LoaiSPs;
             return View();
         }
         //[ChildActionOnly]
@@ -75,16 +73,18 @@ namespace ShopCar.Controllers
             {
                 if (ModelState.IsValid)
                 {
-                    var kh1 = db.KhachHangs.Where(x => x.UserName == kh.UserName);
+                    var kh1 = db.KhachHangs.Where(x => x.UserName == kh.UserName).FirstOrDefault();
 
                     if(kh1!=null)
                     {
                         ViewBag.ThongBao = "tài khoản đã tồn tại";
                         return View();
-                    }    
-                    ViewBag.ThongBao = "Thêm Thành công";
+                    }
+                    int dem = db.KhachHangs.Count();
+                    kh.MaKH = autoID(dem);
                     db.KhachHangs.Add(kh);
                     db.SaveChanges();
+                    ViewBag.ThongBao = "Thêm thành công!";
                 }
                 else
                     ViewBag.ThongBao = "Thêm Thất bại";
@@ -93,6 +93,24 @@ namespace ShopCar.Controllers
             ViewBag.ThongBao = "Sai mã captcha";
             return View();
         }
+        private string autoID(int dem)
+        {
+            string id = "";
+            if (dem < 9 && dem >= 0)
+            {
+                id = "KH00" + Convert.ToString(dem + 1);
+            }
+            else if (dem >= 9 && dem < 100)
+            {
+                id = "KH0" + Convert.ToString(dem + 1);
+            }
+            else if (dem >= 100)
+            {
+                id = "KH" + Convert.ToString(dem + 1);
+            }
+            return id;
+        }
+
         public ActionResult ThongBao()
         {
             return View();

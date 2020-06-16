@@ -14,7 +14,7 @@ namespace ShopCar.Model
     
     public partial class CTHoaDon
     {
-        public int MaHD { get; set; }
+        public string MaHD { get; set; }
         public string MaSP { get; set; }
         public Nullable<int> SoLuong { get; set; }
     

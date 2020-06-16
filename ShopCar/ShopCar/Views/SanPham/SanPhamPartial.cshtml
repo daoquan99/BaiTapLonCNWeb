@@ -24,7 +24,7 @@
                         <div class="product_content grid_content" style="text-align:left;">
                             <div class="product_content_inner">
                                 <p class="manufacture_product"><a href="#">Hàng mới</a></p>
-                                <h4 class="product_name"><a href="product-details.html">@item.TenSP</a></h4>
+                                <h4 class="product_name"><a href="@Url.Action("XemChiTietSanPham","SanPham",new { @MaSP=item.MaSP })">@item.TenSP</a></h4>
                                 <div class="product_rating">
                                     <ul>
                                         <li><a href="#"><i class="ion-android-star-outline"></i></a></li>
@@ -45,8 +45,6 @@
                                         <a href="@Url.Action("ThemGioHang", "GioHang", new { @MaSP = item.MaSP, @strURL = Request.Url.ToString() })" class="item_add">
                                             Thêm vào giỏ hàng
                                         </a>
-                                        @*@Ajax.ActionLink("Thêm vào giỏ hàng", "GioHangPartial", "GioHang", new { @MaSP = item.MaSP, @strURL = Request.Url.ToString() },
-                                        new AjaxOptions { HttpMethod = "GET", UpdateTargetId = "divGioHang", InsertionMode = InsertionMode.Replace }, null)*@
                                     </li>
                                 </ul>
                             </div>

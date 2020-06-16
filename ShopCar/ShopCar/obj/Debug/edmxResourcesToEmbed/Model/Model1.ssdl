@@ -14,7 +14,7 @@
       <PropertyRef Name="MaHD" />
       <PropertyRef Name="MaSP" />
     </Key>
-    <Property Name="MaHD" Type="int" Nullable="false" />
+    <Property Name="MaHD" Type="char" MaxLength="5" Nullable="false" />
     <Property Name="MaSP" Type="char" MaxLength="5" Nullable="false" />
     <Property Name="SoLuong" Type="int" />
   </EntityType>
@@ -32,16 +32,16 @@
     <Key>
       <PropertyRef Name="MaHD" />
     </Key>
-    <Property Name="MaHD" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MaHD" Type="char" MaxLength="5" Nullable="false" />
     <Property Name="NgayDat" Type="date" />
     <Property Name="NgayShip" Type="date" />
-    <Property Name="MaKH" Type="int" />
+    <Property Name="MaKH" Type="char" MaxLength="5" />
   </EntityType>
   <EntityType Name="KhachHang">
     <Key>
       <PropertyRef Name="MaKH" />
     </Key>
-    <Property Name="MaKH" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MaKH" Type="char" MaxLength="5" Nullable="false" />
     <Property Name="TenKH" Type="nvarchar" MaxLength="50" />
     <Property Name="SDT" Type="varchar" MaxLength="20" />
     <Property Name="GioiTinh" Type="nvarchar" MaxLength="10" />

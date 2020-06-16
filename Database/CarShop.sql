@@ -32,7 +32,14 @@ create table LoaiSP(
 	URLAnh varchar(200)
 )
 go
-
+create table NhaCC(
+	MaNCC char(5) primary key,
+	TenNCC nvarchar(50),
+	DiaChi nvarchar(100),
+	SDT varchar(20),
+	Email varchar(100)
+)
+go
 create table SanPham(
 	MaSP char(5) primary key,
 	TenSP nvarchar(50),
@@ -41,7 +48,7 @@ create table SanPham(
 	MoTa ntext,
 	GiaKm money,
 	URLAnh varchar(200),
-	MaLoaiSP char(5) references LoaiSP(MaLoaiSP) on delete cascade
+	MaLoaiSP char(5) references LoaiSP(MaLoaiSP)
 )	
 go
 
@@ -53,14 +60,7 @@ create table CTHoaDon(
 )
 go
 
-create table NhaCC(
-	MaNCC char(5) primary key,
-	TenNCC nvarchar(50),
-	DiaChi nvarchar(100),
-	SDT varchar(20),
-	Email varchar(100)
-)
-go
+
 
 create table PhieuNhap(
 	MaPN char(5) primary key,

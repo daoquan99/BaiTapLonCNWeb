@@ -35,18 +35,26 @@
                         </div>
                         <div class="header_top_links">
                             <ul>
-                                <li><a href="login.html">Đăng ký</a></li>
-                                <li><a href="login.html">Đăng nhập</a></li>
-                                <li>@Html.ActionLink("Giỏ hàng", "XemGioHang", "GioHang")
+                                @if (Session["TaiKhoan"] != null && Session["TaiKhoan"].ToString() != "")
+                                {
+                                    ShopCar.Model.KhachHang kh = (ShopCar.Model.KhachHang)Session["TaiKhoan"];
+                                    <li><h4 style="color:black">Chào @kh.TenKH</h4></li>
+                                    <li><a href="/Home/DangXuat">Đăng xuất</a></li>
+                                }
+                                else
+                                {
+                                    <li style="display:inline;"><a href="/Home/DangKy">Đăng ký</a></li>
+                                    <li style="display:inline;"><a class="lock btnDangNhap" href="#" id="">Đăng Nhâp</a></li>
+                                }
+                                <li><a href="/GioHang/XemGioHang">Giỏ Hàng</a></li>
                             </ul>
                         </div>
                         <div class="search_container">
                             @Html.Action("MenuPartial", "Home")
-                            
                         </div>
                         <div class="header_configure_area">
                             <div class="header_wishlist">
-                                <a href="wishlist.html">
+                                <a href="#">
                                     <i class="icon-heart"></i>
                                     <span class="wishlist_count">3</span>
                                 </a>
@@ -56,19 +64,19 @@
                         <div id="menu" class="text-left ">
                             <ul class="offcanvas_main_menu">
                                 <li class="menu-item-has-children active">
-                                    @Html.ActionLink("Trang chủ", "Index", "Home")
+                                    <a class="active" href="/Home">Trang chủ</a>
+                                    @*@Html.ActionLink("Trang chủ", "Index", "Home")*@
                                 </li>
                                 <li class="menu-item-has-children">
-                                    @Html.ActionLink("Sản phẩm", "DachSachSanPham", "SanPham")
+                                    <a href="/SanPham/DanhSachSanPham">Sản phẩm</a>
+                                    @*@Html.ActionLink("Sản phẩm", "DachSachSanPham", "SanPham")*@
+                                </li>
+                                
+                                <li class="menu-item-has-children">
+                                    <a href="#">Về chúng tôi</a>
                                 </li>
                                 <li class="menu-item-has-children">
-                                    <a href="my-account.html">Tài khoản của tôi</a>
-                                </li>
-                                <li class="menu-item-has-children">
-                                    <a href="about.html">Về chúng tôi</a>
-                                </li>
-                                <li class="menu-item-has-children">
-                                    <a href="contact.html"> Liên hệ</a>
+                                    <a href="#"> Liên hệ</a>
                                 </li>
                             </ul>
                         </div>
@@ -91,12 +99,13 @@
     <header>
         <div class="main_header">
             @Html.Partial("HeaderTopPartial")
+            
             <div class="header_middle">
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-lg-2">
                             <div class="logo">
-                                <a href="@Url.Action("Index","Home")">
+                                <a href="/Home">
                                     <h1 style=" color: #D23A3A; display: inline">G</h1>
                                     <h1 style=" color:#FFFFFF ; display : inline; padding-right: 10px">15</h1>
                                     <h1 style=" color: #FFFFFF; display: inline">Auto</h1>
@@ -107,18 +116,10 @@
                             <div class="header_right_box">
                                 <div class="search_container">
                                     @Html.Action("MenuPartial", "Home")
-                                    @*@using (Html.BeginForm("LayTuKhoaTimKiem", "TimKiem"))
-                                        {
-
-                                            <div class="search_box">
-                                                <input type="text" name="sTuKhoa" placeholder="Nhập tên sản phẩm">
-                                                <button type="submit">Tìm kiếm</button>
-                                            </div>
-                                        }*@
                                 </div>
                                 <div class="header_configure_area">
                                     <div class="header_wishlist">
-                                        <a href="wishlist.html">
+                                        <a href="#">
                                             <i class="icon-heart"></i>
                                             <span class="wishlist_count">3</span>
                                         </a>
@@ -137,8 +138,8 @@
                             <div class="main_menu menu_position text-left">
                                 <nav>
                                     <ul>
-                                        <li><a class="active" href="@Url.Action("Index","Home")">Trang chủ</a></li>
-                                        <li class="mega_items">@Html.ActionLink("Sản phẩm", "DanhSachSanPham", "SanPham")
+                                        <li><a class="active" href="/Home">Trang chủ</a></li>
+                                        <li><a href="/SanPham/DanhSachSanPham">Sản phẩm</a></li>
                                         <li><a href="#">Về chúng tôi</a></li>
                                         <li><a href="#"> Liên hệ</a></li>
                                     </ul>

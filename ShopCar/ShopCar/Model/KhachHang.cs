@@ -20,7 +20,7 @@ namespace ShopCar.Model
             this.HoaDons = new HashSet<HoaDon>();
         }
     
-        public int MaKH { get; set; }
+        public string MaKH { get; set; }
         public string TenKH { get; set; }
         public string SDT { get; set; }
         public string GioiTinh { get; set; }

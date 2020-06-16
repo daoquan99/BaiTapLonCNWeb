@@ -20,10 +20,10 @@ namespace ShopCar.Model
             this.CTHoaDons = new HashSet<CTHoaDon>();
         }
     
-        public int MaHD { get; set; }
+        public string MaHD { get; set; }
         public Nullable<System.DateTime> NgayDat { get; set; }
         public Nullable<System.DateTime> NgayShip { get; set; }
-        public Nullable<int> MaKH { get; set; }
+        public string MaKH { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CTHoaDon> CTHoaDons { get; set; }
