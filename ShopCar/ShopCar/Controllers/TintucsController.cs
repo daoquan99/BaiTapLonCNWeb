@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Web;
@@ -88,10 +89,17 @@ namespace ShopCar.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "MaTin,URLAnh,NoiDung")] Tintuc tintuc)
+        public ActionResult Create([Bind(Include = "MaTin,URLAnh,NoiDung")] Tintuc tintuc, HttpPostedFileBase anh)
         {
             if (ModelState.IsValid)
             {
+                if (anh != null)
+                {
+                    var filename = Path.GetFileName(anh.FileName);
+                    var path = Path.Combine(Server.MapPath("~/images"), filename);
+                    anh.SaveAs(path);
+                    tintuc.URLAnh = filename;
+                }
                 tintuc.MaTin = autoID();
                 db.Tintucs.Add(tintuc);
                 db.SaveChanges();
@@ -121,10 +129,17 @@ namespace ShopCar.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "MaTin,URLAnh,NoiDung")] Tintuc tintuc)
+        public ActionResult Edit([Bind(Include = "MaTin,URLAnh,NoiDung")] Tintuc tintuc, HttpPostedFileBase anh)
         {
             if (ModelState.IsValid)
             {
+                if (anh != null)
+                {
+                    var filename = Path.GetFileName(anh.FileName);
+                    var path = Path.Combine(Server.MapPath("~/images"), filename);
+                    anh.SaveAs(path);
+                    tintuc.URLAnh = filename;
+                }
                 db.Entry(tintuc).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");

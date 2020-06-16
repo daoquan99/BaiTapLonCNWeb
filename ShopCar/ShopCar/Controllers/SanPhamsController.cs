@@ -158,6 +158,7 @@ namespace ShopCar.Controllers
                     anh.SaveAs(path);
                     sanPham.URLAnh = filename;
                 }
+
                 db.Entry(sanPham).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");

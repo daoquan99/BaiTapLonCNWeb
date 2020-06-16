@@ -7,7 +7,7 @@
 
 <h2>Sửa</h2>
 
-@using (Html.BeginForm())
+@using (Html.BeginForm("Edit", "Tintucs", FormMethod.Post, new { enctype = "multipart/form-data" }))
 {
     @Html.AntiForgeryToken()
     
@@ -20,8 +20,9 @@
         <div class="form-group">
             <div class="control-label col-md-2">URL Ảnh</div>
             <div class="col-md-10">
-                @Html.EditorFor(model => model.URLAnh, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.URLAnh, "", new { @class = "text-danger" })
+                @*@Html.EditorFor(model => model.URLAnh, new { htmlAttributes = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(model => model.URLAnh, "", new { @class = "text-danger" })*@
+                <input type="file" name="anh" id="URLanh" accept="image/*" class="btn-default" />
             </div>
         </div>
 
