@@ -100,11 +100,11 @@ namespace ShopCar.Controllers
             {
                 id = "KH00" + Convert.ToString(dem + 1);
             }
-            else if (dem >= 9 && dem < 100)
+            else if (dem >= 9 && dem < 99)
             {
                 id = "KH0" + Convert.ToString(dem + 1);
             }
-            else if (dem >= 100)
+            else if (dem >= 99)
             {
                 id = "KH" + Convert.ToString(dem + 1);
             }

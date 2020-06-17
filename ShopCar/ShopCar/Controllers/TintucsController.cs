@@ -48,22 +48,22 @@ namespace ShopCar.Controllers
         private string autoID()
         {
             string id = "";
-            int dem = db.Tintucs.ToList().Count();
+            int dem = db.Tintucs.ToList().Count()+1;
             while (true)
             {
-                if (dem < 10 && dem >= 1)
+                if (dem < 10 && dem > 1)
                 {
-                    id = "T000" + Convert.ToString(dem + 1);
+                    id = "T000" + Convert.ToString(dem );
                 }
                 else if (dem >= 10 && dem < 100)
                 {
-                    id = "T00" + Convert.ToString(dem + 1);
+                    id = "T00" + Convert.ToString(dem );
                 }
                 else if (dem >= 100)
                 {
-                    id = "T0" + Convert.ToString(dem + 1);
+                    id = "T0" + Convert.ToString(dem );
                 }
-                else if (dem == 0)
+                else if (dem == 1)
                 {
                     id = "T0001";
                 }

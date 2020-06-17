@@ -54,22 +54,22 @@ namespace ShopCar.Controllers
         private string autoID()
         {
             string id="";
-            int dem = db.NhaCCs.ToList().Count();
+            int dem = db.NhaCCs.ToList().Count()+1;
             while (true)
             {
-                if (dem < 10 && dem >= 1)
+                if (dem < 10 && dem > 1)
                 {
-                    id = "N000" + Convert.ToString(dem + 1);
+                    id = "N000" + Convert.ToString(dem );
                 }
                 else if (dem >= 10 && dem < 100)
                 {
-                    id = "N00" + Convert.ToString(dem + 1);
+                    id = "N00" + Convert.ToString(dem );
                 }
                 else if (dem >= 100 )
                 {
-                    id = "N0" + Convert.ToString(dem + 1);
+                    id = "N0" + Convert.ToString(dem );
                 }
-                else if (dem == 0)
+                else if (dem == 1)
                 {
                     id = "N0001";
                 }

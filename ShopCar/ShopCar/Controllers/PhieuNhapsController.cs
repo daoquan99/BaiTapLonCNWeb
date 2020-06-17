@@ -50,22 +50,22 @@ namespace ShopCar.Controllers
         private string autoID()
         {
             string id = "";
-            int dem = db.PhieuNhaps.ToList().Count();
+            int dem = db.PhieuNhaps.ToList().Count()+1;
             while (true)
             {
-                if (dem < 10 && dem >= 1)
+                if (dem < 10 && dem > 1)
                 {
-                    id = "P000" + Convert.ToString(dem + 1);
+                    id = "P000" + Convert.ToString(dem );
                 }
                 else if (dem >= 10 && dem < 100)
                 {
-                    id = "P00" + Convert.ToString(dem + 1);
+                    id = "P00" + Convert.ToString(dem );
                 }
                 else if (dem >= 100)
                 {
-                    id = "P0" + Convert.ToString(dem + 1);
+                    id = "P0" + Convert.ToString(dem );
                 }
-                else if (dem == 0)
+                else if (dem == 1)
                 {
                     id = "P0001";
                 }
