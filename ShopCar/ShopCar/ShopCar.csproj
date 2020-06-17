@@ -170,11 +170,11 @@
     <Compile Include="Model\LoaiSP.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Model\Metadata\KhachHang.cs" />
-    <Compile Include="Model\Metadata\LoaiSP.cs" />
-    <Compile Include="Model\Metadata\NhaCC.cs" />
-    <Compile Include="Model\Metadata\PhieuNhap.cs" />
-    <Compile Include="Model\Metadata\SanPham.cs" />
+    <Compile Include="Model\Metadata\KhachHang.Metadata.cs" />
+    <Compile Include="Model\Metadata\LoaiSP.Metadata.cs" />
+    <Compile Include="Model\Metadata\NhaCC.Metadata.cs" />
+    <Compile Include="Model\Metadata\PhieuNhap.Metadata.cs" />
+    <Compile Include="Model\Metadata\SanPham.Metadata.cs" />
     <Compile Include="Model\Model1.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -645,6 +645,8 @@
     <Content Include="Views\PhieuNhaps\View.cshtml" />
     <Content Include="Views\PhieuNhaps\CreatePartial.cshtml" />
     <Content Include="Views\Admin\ThongKe.cshtml" />
+    <Content Include="Views\Admin\DangNhap.cshtml" />
+    <Content Include="Views\Shared\_AdminHeader.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

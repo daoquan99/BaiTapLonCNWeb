@@ -111,26 +111,7 @@
                             </button>
                         </form>
                     </div>
-                    <div class="user-dropdown-details d-flex">
-                        <div class="profile_details">
-                            <ul>
-                                <li class="dropdown profile_details_drop">
-                                    <a href="#" style="margin-right:18px" class="dropdown-toggle" data-toggle="dropdown" id="dropdownMenu3" aria-haspopup="true" aria-expanded="false">
-                                        <i class="fa fa-user-circle" style="font-size:30px;"></i>
-                                    </a>
-                                    <ul class="dropdown-menu drp-mnu" aria-labelledby="dropdownMenu3">
-                                        <li class="user-info">
-                                            <h5 class="user-name">John Deo</h5>
-                                            <span class="status ml-2">Quản trị viên</span>
-                                        </li>
-                                        <li> <a href="#"><i class="lnr lnr-user"></i>Thông tin</a> </li>
-                                        <li> <a href="#"><i class="lnr lnr-cog"></i>Cài đặt</a> </li>
-                                        <li class="logout"> <a href="#sign-up.html"><i class=""></i>Thoát</a> </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                    @Html.Partial("_AdminHeader")
                 </div>
             </div>
             <!--notification menu end -->
@@ -141,7 +122,7 @@
             <!-- content -->
             <div class="container-fluid content-top-gap">
 
-                <nav aria-label="breadcrumb">
+                @*<nav aria-label="breadcrumb">
                     <ol class="breadcrumb my-breadcrumb">
                         <li class="breadcrumb-item"><a href="@Url.Action("Index","Admin")">Trang chủ</a></li>
                         <li class="breadcrumb-item active" aria-current="page">Bảng điều khiển</li>
@@ -150,10 +131,10 @@
                 <div class="welcome-msg pt-3 pb-4">
                     <h1>Chào <span class="text-primary">John</span></h1>
                     <p>Quản trị viên.</p>
-                </div>
+                </div>*@
 
                 <!-- statistics data -->
-                @Html.Action("ThongKe", "Admin");
+               
                 <!-- //statistics data -->
                 <!-- charts -->
                 <div class="chart">

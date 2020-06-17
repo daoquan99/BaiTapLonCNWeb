@@ -1,0 +1,54 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Đăng nhập Admin</title>
+</head>
+<body>
+    <link href="~/Content/cssLogin/style_Login.css" rel="stylesheet" />
+    <div>
+        <div id="popup_login" style=" display:block;">
+            <div class="login-form" style="height:350px">
+                <h2>Đăng nhập</h2>
+                <div class="form-info">
+                    <form action="/Admin/DangNhap" method="post">
+                        <input type="text" class="txtTenDangNhap email" name="txtTenDangNhap" placeholder="Tài Khoản" required="">
+                        <input type="password" class="txtMatKhau password" name="txtMatKhau" placeholder="Mật Khẩu" required="">
+                        <p><a href="#">Quên tài khoản?</a></p>
+                        <h3 style="color:red;">@ViewBag.thongbao</h3>
+                        <div class="container">
+                            <input type="submit" class="btn_Dang_Nhap" value="Đăng Nhập">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        #popup_login input[type="text"],
+        #popup_login input[type="password"]
+        {
+            width:80%;
+        }
+        .login-form input[type="submit"] {
+            margin-left: 100px;
+        }
+        @@media only screen and (max-width: 600px) {
+            .login-form input[type="submit"] {
+                margin-left: 40px;
+            }
+            #popup_login input[type="text"],
+            #popup_login input[type="password"] {
+                width: 65%;
+            }
+        }
+        
+    </style>
+</body>
+</html>

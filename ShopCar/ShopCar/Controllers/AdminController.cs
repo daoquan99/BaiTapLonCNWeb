@@ -25,7 +25,30 @@ namespace WebsiteBanHang.Controllers
             ViewBag.TongDonDatHang = db.HoaDons.Count();
             return View();
         }
-        
+        [HttpGet]
+        public ActionResult DangNhap()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult DangNhap(string txtTenDangNhap,string txtMatKhau)
+        {
+            Admin ad = db.Admins.Where(x => x.UserAd == txtTenDangNhap && x.Pass == txtMatKhau).FirstOrDefault();
+            if(ad!=null)
+            {
+                Session["TaiKhoanAdmin"] = ad;
+                return RedirectToAction("Index");
+            }
+            ViewBag.thongbao = "Tài khoản hoặc mật khẩu không chính xác";
+            return View();
+           
+        }
+        public ActionResult DangXuat()
+        {
+            Session["TaiKhoanAdmin"] = null;
+            return View("DangNhap");
+        }
+
         protected override void Dispose(bool disposing)
         {
             if (disposing)

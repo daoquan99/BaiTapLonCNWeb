@@ -89,18 +89,16 @@ namespace ShopCar.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "MaNCC,TenNCC,DiaChi,SDT,Email")] NhaCC nhaCC)
+        public ActionResult Create(NhaCC nhaCC /*[Bind(Include = "MaNCC,TenNCC,DiaChi,SDT,Email")]*/ )
         {
             if (ModelState.IsValid)
-
             {       
-                    nhaCC.MaNCC = autoID();                   
+                nhaCC.MaNCC = autoID();                   
                 db.NhaCCs.Add(nhaCC);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-
-            return View(nhaCC);
+            return View();
         }
 
         // GET: NhaCCs/Edit/5
