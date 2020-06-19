@@ -1,0 +1,71 @@
+﻿@using ShopCar.Model;
+@model HoaDon
+
+@{
+    ViewBag.Title = "DuyetDonHang";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<h2>Đơn hàng của khách hàng: @Model.KhachHang.TenKH</h2>
+
+<div class="table ChiTietDonDatHang">
+    <table class="table" id="table">
+        <tr>
+            <td>
+                <table style="margin:10px auto;" id="ThongTinPhieuNhap">
+                    @Html.Hidden("MaHD", Model.MaHD)
+                    <tr>
+                        <td>Tên khách hàng: <span style="color:red">@Model.KhachHang.TenKH</span></td>
+                        <td>Ngày đặt: <span style="color:red">@Model.NgayDat.Value.ToString("dd/MM/yyyy")</span> </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <table class="table" id="tblChiTietPhieuNhap">
+                    @{ var lstCHiTietDDH = ViewBag.LstChiTietDDH as IEnumerable<CTHoaDon>;}
+                    <tr class="trFirstChild" data-id="-1">
+                        <th>Sản phẩm</th>
+                        <th>Hình ảnh</th>
+                        <th>Số lượng</th>
+                        <th>Đơn giá</th>
+                    </tr>
+                    @foreach (var item in lstCHiTietDDH)
+                    {
+                        <tr class="trAppend">
+                            <td>@item.SanPham.TenSP</td>
+                            <td><img src="~/images/@item.SanPham.URLAnh" style="width:150px;height:125px;" /></td>
+                            <td>@item.SoLuong</td>
+                            <td>@item.SanPham.DonGia.Value.ToString("#,##")</td>
+                        </tr>
+                    }
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div style="text-align:right; margin-right:50px;">Thành tiền: @Model.CTHoaDons.Sum(x => x.SanPham.DonGia).Value.ToString("#,##") VNĐ</div>
+            </td>
+        </tr>
+    </table>
+</div>
+<input type="button" value="In đơn hàng" class="btn btn-success" id="btnInDonHang" />
+
+<script>
+    $("#btnInDonHang").click(function () {
+        var content = $("#table").html();
+        InDonHang(content);
+    })
+    function InDonHang(content) {
+        var printWindow = window.open('', '', 'heigh=400,width=800');
+        printWindow.document.write('<html><head><title>Div content</title>');
+        printWindow.document.write('</head><body>');
+        printWindow.document.write(content);
+        printWindow.document.write('</body></html>');
+        printWindow.document.close();
+        printWindow.print();
+    }
+</script>

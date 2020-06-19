@@ -10,6 +10,7 @@ using ShopCar.Model;
 
 namespace ShopCar.Controllers
 {
+    [Authorize(Roles =("QuanTriVien,QuanLySPVaLoaiSP"))]
     public class LoaiSPsController : Controller
     {
         private CarShopEntities db = new CarShopEntities();

@@ -144,6 +144,7 @@
     <Compile Include="Controllers\LoaiSPsController.cs" />
     <Compile Include="Controllers\NhaCCsController.cs" />
     <Compile Include="Controllers\PhieuNhapsController.cs" />
+    <Compile Include="Controllers\QuanLyDonHangController.cs" />
     <Compile Include="Controllers\SanPhamController.cs" />
     <Compile Include="Controllers\SanPhamsController.cs" />
     <Compile Include="Controllers\TimKiemController.cs" />
@@ -647,6 +648,12 @@
     <Content Include="Views\Admin\ThongKe.cshtml" />
     <Content Include="Views\Admin\DangNhap.cshtml" />
     <Content Include="Views\Shared\_AdminHeader.cshtml" />
+    <Content Include="Views\PhieuNhaps\NhapHang.cshtml" />
+    <Content Include="Views\Admin\LoiPhanQuyen.cshtml" />
+    <Content Include="Views\QuanLyDonHang\DonHangChuaGiao.cshtml" />
+    <Content Include="Views\QuanLyDonHang\DuyetDonHang.cshtml" />
+    <Content Include="Views\QuanLyDonHang\DonHangDaGiao.cshtml" />
+    <Content Include="Views\QuanLyDonHang\XemDonHang.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

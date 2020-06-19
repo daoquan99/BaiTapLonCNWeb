@@ -82,7 +82,7 @@
     <Key>
       <PropertyRef Name="MaQuyen" />
     </Key>
-    <Property Name="MaQuyen" Type="char" MaxLength="5" Nullable="false" />
+    <Property Name="MaQuyen" Type="varchar" MaxLength="20" Nullable="false" />
     <Property Name="TenQuyen" Type="nvarchar" MaxLength="50" />
   </EntityType>
   <EntityType Name="QuyenAd">
@@ -91,7 +91,7 @@
       <PropertyRef Name="MaQuyen" />
     </Key>
     <Property Name="MaAdmin" Type="char" MaxLength="5" Nullable="false" />
-    <Property Name="MaQuyen" Type="char" MaxLength="5" Nullable="false" />
+    <Property Name="MaQuyen" Type="varchar" MaxLength="20" Nullable="false" />
     <Property Name="GhiChu" Type="ntext" />
   </EntityType>
   <EntityType Name="SanPham">

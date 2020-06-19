@@ -49,5 +49,15 @@ namespace ShopCar.Controllers
 
             return View(sp);
         }
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing)
+            {
+                if (disposing)
+                    db.Dispose();
+                db.Dispose();
+            }
+            base.Dispose(disposing);
+        }
     }
 }

@@ -30,14 +30,7 @@ namespace ShopCar.Controllers
             ViewBag.lstLoaiSP = db.LoaiSPs;
             return View();
         }
-        //[ChildActionOnly]
-        //[HttpPost]
-        //public ActionResult MenuPartial(LoaiSP Lsp)
-        //{
-        //    ViewBag.lstLoaiSP = new SelectList(db.LoaiSPs, "MaLoaiSP", "TenLoai");
-        //    return View(Lsp);
-        //}
-
+        
         [HttpPost]
         public ActionResult DangNhap(FormCollection f /*string txtTenDangNhap, string txtMatKhau*/)
         {
@@ -114,6 +107,16 @@ namespace ShopCar.Controllers
         public ActionResult ThongBao()
         {
             return View();
+        }
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing)
+            {
+                if (disposing)
+                    db.Dispose();
+                db.Dispose();
+            }
+            base.Dispose(disposing);
         }
     }
 }

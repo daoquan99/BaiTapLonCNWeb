@@ -10,6 +10,7 @@ using ShopCar.Model;
 
 namespace ShopCar.Controllers
 {
+    [Authorize(Roles = "QuanTriVien,QuanLyPhieuNhap")]
     public class PhieuNhapsController : Controller
     {
         private CarShopEntities db = new CarShopEntities();
@@ -175,5 +176,44 @@ namespace ShopCar.Controllers
             }
             base.Dispose(disposing);
         }
+
+        [HttpGet]
+        public ActionResult NhapHang()
+        {
+            ViewBag.MaNCC = db.NhaCCs;
+            ViewBag.ListSP = db.SanPhams;
+            return View();
+        }
+        [HttpPost]
+        public ActionResult NhapHang(PhieuNhap phieuNhap, IEnumerable<CTPhieuNhap> modelList)
+        {
+            ViewBag.MaNCC = db.NhaCCs;
+            ViewBag.ListSP = db.SanPhams;
+            AddTTPhieuNhap(phieuNhap, modelList);
+            return View(phieuNhap);
+        }
+        void AddTTPhieuNhap(PhieuNhap PN, IEnumerable<CTPhieuNhap> modelList)
+        {
+            if (modelList != null)
+            {
+                PN.MaPN = autoID();
+                PN.MaPN = autoID();
+                db.PhieuNhaps.Add(PN);
+                db.SaveChanges();
+            }
+            AddTTChiTietPhieuNhap(PN, modelList);
+        }
+        void AddTTChiTietPhieuNhap(PhieuNhap model, IEnumerable<CTPhieuNhap> modelList)
+        {
+            foreach (var item in modelList)
+            {
+                SanPham sp = db.SanPhams.Single(x => x.MaSP == item.MaSP);
+                sp.SoLuong += item.SoLuong;
+                item.MaPN = model.MaPN;
+                db.CTPhieuNhaps.Add(item);
+                db.SaveChanges();
+            }
+        }
+       
     }
 }

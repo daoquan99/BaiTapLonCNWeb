@@ -1,0 +1,59 @@
+﻿@using ShopCar.Model;
+@model IEnumerable<HoaDon>
+
+
+@{
+    ViewBag.Title = "DonHangChuaGiao";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    WebGrid grid = new WebGrid(source: Model, rowsPerPage: 8);
+}
+<div style="background:#ffff;padding:10px 0;border-bottom:1px initial #6D7881">
+    <span class="btn btn-outline-success "><a href="/QuanLyDonHang/DonHangChuaGiao">Đơn hàng chưa giao</a></span>
+    <span class="btn btn-outline-success active">Đơn hàng hoàn thành</span>
+</div>
+
+@grid.GetHtml(
+    tableStyle: "divTable",
+    headerStyle: "gridHeader",
+    footerStyle: "gridFooter",
+    rowStyle: "gridRow",
+    alternatingRowStyle: "gridAltRow",
+    columns: grid.Columns(
+        grid.Column("MaHD", "Mã Đơn đặt hàng"),
+        grid.Column("MaKH", "Tên khách hàng", format: p => p.MaKH != null ? p.KhachHang.TenKH : ""),
+        grid.Column("NgayDat", "Ngày đặt"),
+        grid.Column("NgayShip", "Ngày giao hàng"),
+        grid.Column(format: x => Html.ActionLink("Xem Đơn Hàng", "XemDonHang", new { @MaHD = x.MaHD }, new { @class = "btn btn-link" }))
+        )
+    )
+
+<style>
+    .btn-outline-success {
+        border: none;
+        color: #040C14;
+    }
+
+    .divTable {
+        width: 100%;
+        border: 1px solid #45484B;
+    }
+
+        .divTable td, th {
+            border: 1px solid #45484B;
+            padding-left: 10px;
+        }
+
+    .gridHeader {
+        background: #1BB230;
+    }
+
+        .gridHeader th a {
+            color: #ffff;
+        }
+
+    .gridFooter {
+        font-weight: bold;
+        color: #01010B;
+    }
+</style>
+

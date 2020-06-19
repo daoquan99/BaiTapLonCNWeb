@@ -25,25 +25,26 @@
                     </ul>
                 </li>
             </ul>
+
+            <br/>
+            
         }
         else
         {
             <ul>
                 <li class="dropdown profile_details_drop">
-                    <a href="#" style="margin-right:18px" class="dropdown-toggle" data-toggle="dropdown" id="dropdownMenu3" aria-haspopup="true" aria-expanded="false">
-                        <i class="fa fa-user-circle" style="font-size:30px;"></i>
+                    <a href="/Admin/DangNhap">
+                        Đăng nhập
                     </a>
-                    <ul class="dropdown-menu drp-mnu" aria-labelledby="dropdownMenu3">
-                        <li class="user-info">
-                            <h5 class="user-name">John Deo</h5>
-                            <span class="status ml-2">Quản trị viên</span>
-                        </li>
-                        <li> <a href="#"><i class="lnr lnr-user"></i>Thông tin</a> </li>
-                        <li> <a href="#"><i class="lnr lnr-cog"></i>Cài đặt</a> </li>
-                        <li class="logout"> <a href="#sign-up.html"><i class=""></i>Thoát</a> </li>
-                    </ul>
                 </li>
             </ul>
         }
     </div>
 </div>
+
+@if(Session["TaiKhoanAdmin"] != null)
+{
+    <div>
+        Chào @ad.UserAd
+    </div>
+}
