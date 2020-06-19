@@ -163,7 +163,11 @@ namespace ShopCar.Controllers
         public ActionResult DeleteConfirmed(string id)
         {
             PhieuNhap phieuNhap = db.PhieuNhaps.Find(id);
-           
+            var dsPN = db.CTPhieuNhaps.Where(x => x.MaPN == id);
+            foreach (var i in dsPN)
+            {
+                db.CTPhieuNhaps.Remove(i);
+            }
             db.PhieuNhaps.Remove(phieuNhap);
             db.SaveChanges();
             return RedirectToAction("Index");

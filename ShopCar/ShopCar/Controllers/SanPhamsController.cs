@@ -192,6 +192,11 @@ namespace ShopCar.Controllers
         public ActionResult DeleteConfirmed(string id)
         {
             SanPham sanPham = db.SanPhams.Find(id);
+            var dsPN = db.CTPhieuNhaps.Where(x => x.MaSP == id);
+            foreach (var i in dsPN)
+            {
+                db.CTPhieuNhaps.Remove(i);
+            }
             db.SanPhams.Remove(sanPham);
             db.SaveChanges();
             return RedirectToAction("Index");

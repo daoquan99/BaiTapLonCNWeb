@@ -155,6 +155,11 @@ namespace ShopCar.Controllers
         public ActionResult DeleteConfirmed(string id)
         {
             LoaiSP loaiSP = db.LoaiSPs.Find(id);
+            var dsPN = db.SanPhams.Where(x => x.MaLoaiSP == id);
+            foreach (var i in dsPN)
+            {
+                db.SanPhams.Remove(i);
+            }
             db.LoaiSPs.Remove(loaiSP);
             db.SaveChanges();
             return RedirectToAction("Index");
