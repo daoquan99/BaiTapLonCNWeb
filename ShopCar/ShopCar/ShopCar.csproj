@@ -654,6 +654,8 @@
     <Content Include="Views\QuanLyDonHang\DuyetDonHang.cshtml" />
     <Content Include="Views\QuanLyDonHang\DonHangDaGiao.cshtml" />
     <Content Include="Views\QuanLyDonHang\XemDonHang.cshtml" />
+    <Content Include="Views\PhieuNhaps\Delete1.cshtml" />
+    <Content Include="Views\PhieuNhaps\Edit1.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

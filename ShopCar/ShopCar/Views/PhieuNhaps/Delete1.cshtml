@@ -1,0 +1,53 @@
+﻿@model ShopCar.Model.CTPhieuNhap
+
+@{
+    ViewBag.Title = "Delete1";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Xóa</h2>
+
+<h3>Bạn chắc chắn muốn xóa?</h3>
+<div>
+    <h4>Chi tiết phiếu nhập</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+           Số lượng
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SoLuong)
+        </dd>
+
+        <dt>
+           Đơn giá
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DonGia)
+        </dd>
+
+     
+        <dt>
+            Tên Sản phẩm
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SanPham.TenSP)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Xóa" class="btn btn-danger" /> |
+            @Html.ActionLink("Quay lại", "Index")
+        </div>
+    }
+</div>
+
+

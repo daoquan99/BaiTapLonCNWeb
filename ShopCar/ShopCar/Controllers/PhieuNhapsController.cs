@@ -35,7 +35,7 @@ namespace ShopCar.Controllers
             {
                 return HttpNotFound();
             }
-            ViewBag.lstPN = db.CTPhieuNhaps.Where(x => x.MaPN == id);
+            ViewBag.lstPN = db.CTPhieuNhaps.Where(x => x.MaPN == id );
             return View(phieuNhap);
         }
         private bool idHasExist(string id)
@@ -163,9 +163,94 @@ namespace ShopCar.Controllers
         public ActionResult DeleteConfirmed(string id)
         {
             PhieuNhap phieuNhap = db.PhieuNhaps.Find(id);
+           
             db.PhieuNhaps.Remove(phieuNhap);
             db.SaveChanges();
             return RedirectToAction("Index");
+        }
+        public ActionResult Delete1(string id, string id2)
+        {
+            if (id == null||id2==null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            var dsPN = db.CTPhieuNhaps.Where(x => x.MaPN == id);
+            CTPhieuNhap cTPhieuNhap = new CTPhieuNhap();
+            foreach (var i in dsPN)
+            {
+                if (i.MaSP == id2)
+                {
+                    cTPhieuNhap = i;
+                    break;
+                }
+            }
+            if (cTPhieuNhap == null)
+            {
+                return HttpNotFound();
+            }
+            return View(cTPhieuNhap);
+        }
+
+        // POST: CTPhieuNhaps/Delete/5
+        [HttpPost, ActionName("Delete1")]
+        [ValidateAntiForgeryToken]
+        public ActionResult Delete1Confirmed(string id,string id2)
+        {
+            var dsPN= db.CTPhieuNhaps.Where(x => x.MaPN == id);
+            CTPhieuNhap cTPhieuNhap = new CTPhieuNhap();
+            foreach (var i in dsPN)
+            {
+                if (i.MaSP==id2)
+                {
+                    cTPhieuNhap = i;
+                    break;
+                }
+            }        
+            db.CTPhieuNhaps.Remove(cTPhieuNhap);
+            db.SaveChanges();
+            return RedirectToAction("Index");
+        }
+        public ActionResult Edit1(string id, string id2)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            CTPhieuNhap cTPhieuNhap = new CTPhieuNhap();
+            var dsPN = db.CTPhieuNhaps.Where(x => x.MaPN == id);
+            foreach (var i in dsPN)
+            {
+                if (i.MaSP == id2)
+                {
+                    cTPhieuNhap = i;
+                    break;
+                }
+            }
+            if (cTPhieuNhap == null)
+            {
+                return HttpNotFound();
+            }
+           ViewBag.MaPN = new SelectList(db.PhieuNhaps, "MaPN", "MaNCC", cTPhieuNhap.MaPN);
+            ViewBag.MaSP = new SelectList(db.SanPhams, "MaSP", "TenSP", cTPhieuNhap.MaSP);
+            return View(cTPhieuNhap);
+        }
+
+        // POST: CTPhieuNhaps/Edit/5
+        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
+        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Edit1([Bind(Include = "MaPN,MaSP,SoLuong,DonGia")] CTPhieuNhap cTPhieuNhap)
+        {
+            if (ModelState.IsValid)
+            {
+                db.Entry(cTPhieuNhap).State = EntityState.Modified;
+                db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            ViewBag.MaPN = new SelectList(db.PhieuNhaps, "MaPN", "MaNCC", cTPhieuNhap.MaPN);
+            ViewBag.MaSP = new SelectList(db.SanPhams, "MaSP", "TenSP", cTPhieuNhap.MaSP);
+            return View(cTPhieuNhap);
         }
 
         protected override void Dispose(bool disposing)

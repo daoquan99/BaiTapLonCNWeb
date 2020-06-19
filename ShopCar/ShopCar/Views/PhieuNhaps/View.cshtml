@@ -16,18 +16,26 @@
     </tr>
 
 @foreach (var item in Model) {
-    <tr>
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.SoLuong)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.DonGia)
+    </td>
+
+    <td>
+        @Html.DisplayFor(modelItem => item.SanPham.TenSP)
+    </td>
+    @*<td>
+        <input type="hidden" name="MaPN" value="@item.MaPN">
+    </td>*@
         <td>
-            @Html.DisplayFor(modelItem => item.SoLuong)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.DonGia)
-        </td>
-    
-        <td>
-            @Html.DisplayFor(modelItem => item.SanPham.TenSP)
-        </td>      
-    </tr>
+                @Html.ActionLink("Sửa", "Edit1", new { id = item.MaPN, id2=item.MaSP }) |
+
+                @Html.ActionLink("Xóa", "Delete1", new { id = item.MaPN, id2 = item.MaSP })
+            </td>
+</tr>
 }
 
 </table>

@@ -9,30 +9,30 @@
     IEnumerable<NhaCC> lstNCC = (IEnumerable<NhaCC>)ViewBag.MaNCC;
 
 }
-<form action="/PhieuNhaps/NhapHang" method="post">
-    <div class="col-md-12" style="margin:10px auto;">
-        <table style="margin:10px auto;" id="ThongTinPhieuNhap">
-            <tr>
-                <td><span>Nhà cung cấp:</span></td>
-                <td>
-                    <select name="MaNCC" class="MaNCC" style="background:#ffff;width:250px;height:30px;border-radius:2px;">
-                        @foreach (var item in lstNCC)
-                        {
-                            <option value="@item.MaNCC"> @item.TenNCC </option>
-                        }
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td><span>Ngày nhập:</span></td>
-                <td><input type="date" name="NgayNhap" style="width:250px;font-size:15px" /></td>
-            </tr>
-        </table>
-    </div>
-    <div class="clearfix"></div>
+    <form action="/PhieuNhaps/NhapHang" method="post">
+        <div class="col-md-12" style="margin:10px auto;">
+            <table style="margin:10px auto;" id="ThongTinPhieuNhap">
+                <tr>
+                    <td><span>Nhà cung cấp:</span></td>
+                    <td>
+                        <select name="MaNCC" class="MaNCC" style="background:#ffff;width:250px;height:30px;border-radius:2px;">
+                            @foreach (var item in lstNCC)
+                            {
+                                <option value="@item.MaNCC"> @item.TenNCC </option>
+                            }
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><span>Ngày nhập:</span></td>
+                    <td><input type="date" name="NgayNhap" style="width:250px;font-size:15px" /></td>
+                </tr>
+            </table>
+        </div>
+        <div class="clearfix"></div>
 
-    <div class="col-md-11" style="margin:20px auto;">
-        <table class="table " id="tblChiTietPhieuNhap">
+        <div class="col-md-11" style="margin:20px auto;">
+            <table class="table " id="tblChiTietPhieuNhap">
                 <tr class="trAppend" style="display:none;">
                     @{ IEnumerable<SanPham> lstSanPham = ViewBag.ListSP as IEnumerable<SanPham>;}
                     <td>
@@ -56,10 +56,13 @@
                     <td></td>
                 </tr>
             </table>
-        <input type="button" value="+" class="btn btn-success" id="btnAdd" />
-        <input type="submit" value="Nhập hàng" class="btn btn-primary" id="btnNhapHang" />
-    </div>
-</form>
+            <input type="button" value="+" class="btn btn-success" id="btnAdd" />
+            <input type="submit" value="Nhập hàng" class="btn btn-primary" id="btnNhapHang" />
+        </div>
+        <div>
+            @Html.ActionLink("Quay lại danh sách", "Index")
+        </div>
+    </form>
 
 
 <script>
@@ -146,4 +149,5 @@
         return bl;
     }
 </script>
+
 
