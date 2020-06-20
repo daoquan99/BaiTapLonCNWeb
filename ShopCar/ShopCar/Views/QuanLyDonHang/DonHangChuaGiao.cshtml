@@ -21,7 +21,7 @@
     columns: grid.Columns(
         grid.Column("MaHD", "Mã Đơn đặt hàng"),
         grid.Column("MaKH", "Tên khách hàng", format: p => p.MaKH != null ? p.KhachHang.TenKH : ""),
-        grid.Column("NgayDat", "Ngày đặt"),
+        grid.Column("NgayDat", "Ngày đặt", format: p=>p.NgayDat.ToString("dd/MM/yyyy") ),
         grid.Column("NgayShip", "Ngày giao hàng"),
         grid.Column(format: x => Html.ActionLink("Duyệt đơn hàng", "DuyetDonHang", new { id = x.MaHD }, new { @class = "btn btn-link" }))
         )

@@ -79,52 +79,48 @@ else
                                     </table>
                                 </div>
                             </form>
-                            @*@using (Html.BeginForm("CapNhatGioHang", "GioHang"))
-                                {
-
-                                    <div class="cart_submit">
-                                            <button type="submit">Cập nhật giỏ hàng</button>
-                                        </div>
-                                }*@
                         </div>
                     </div>
                 </div>
 
                 <form action="/GioHang/DatHang" method="post">
-                    <div class="coupon_area col-9 TTCaNhan">
-                        <h3>Thông tin cá nhân</h3>
-                        <div class="row ">
-                            <div class="col-lg-6 col-md-6 register-top-grid">
-                                <div class="coupon_code left ">
-                                    <div>
-                                        <span>Họ tên</span>
-                                        <input id="TenKH" name="TenKH" type="text" value="">
-                                        <p id="tb_TenKH"></p>
-                                    </div>
-                                    <div>
-                                        <span>Địa chỉ</span>
-                                        <input id="DiaChi" name="DiaChi" type="text" value="">
-                                        <p id="tb_DiaChi"></p>
+                    @if (Session["TaiKhoan"] == null)
+                    {
+                        <div class="coupon_area col-9 TTCaNhan">
+                            <h3>Thông tin cá nhân</h3>
+                            <div class="row ">
+                                <div class="col-lg-6 col-md-6 register-top-grid">
+                                    <div class="coupon_code left ">
+                                        <div>
+                                            <span>Họ tên</span>
+                                            <input id="TenKH" name="TenKH" type="text" value="">
+                                            <p id="tb_TenKH"></p>
+                                        </div>
+                                        <div>
+                                            <span>Địa chỉ</span>
+                                            <input id="DiaChi" name="DiaChi" type="text" value="">
+                                            <p id="tb_DiaChi"></p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-lg-6 col-md-6 register-bottom-grid">
-                                <div class="coupon_code right">
-                                    <div>
-                                        <span>Email</span>
-                                        <input id="Email" name="Email" type="text" value="">
-                                        <p id="tb_Email"></p>
-                                    </div>
-                                    <div>
-                                        <span>Số điện thoại</span>
-                                        <input id="SoDienThoai" name="SoDienThoai" type="text" value="">
-                                        <p id="tb_SoDienThoai"></p>
-                                    </div>
+                                <div class="col-lg-6 col-md-6 register-bottom-grid">
+                                    <div class="coupon_code right">
+                                        <div>
+                                            <span>Email</span>
+                                            <input id="Email" name="Email" type="text" value="">
+                                            <p id="tb_Email"></p>
+                                        </div>
+                                        <div>
+                                            <span>Số điện thoại</span>
+                                            <input id="SoDienThoai" name="SoDienThoai" type="text" value="">
+                                            <p id="tb_SoDienThoai"></p>
+                                        </div>
 
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    }
                     <div class="btnDatHang">
                         <input type="submit" value="Đặt hàng" id="btnDatHang" class="btn btn-primary">
                         <a class="btn btn-success" href="/Home">Mua tiếp</a>

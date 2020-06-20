@@ -99,10 +99,3 @@ create table QuyenAd(
 	primary key (MaAdmin, MaQuyen)
 )
 go
-
-create table Tintuc(
-	MaTin char(5) primary key,
-	URLAnh varchar(200),
-	NoiDung ntext
-)
-go

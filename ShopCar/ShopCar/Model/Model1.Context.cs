@@ -36,6 +36,5 @@ namespace ShopCar.Model
         public virtual DbSet<Quyen> Quyens { get; set; }
         public virtual DbSet<QuyenAd> QuyenAds { get; set; }
         public virtual DbSet<SanPham> SanPhams { get; set; }
-        public virtual DbSet<Tintuc> Tintucs { get; set; }
     }
 }

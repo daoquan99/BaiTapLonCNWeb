@@ -103,7 +103,6 @@ namespace ShopCar.Controllers
             }
             return id;
         }
-
         public ActionResult ThongBao()
         {
             return View();

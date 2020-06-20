@@ -198,6 +198,7 @@ namespace ShopCar.Controllers
                 return RedirectToAction("Index", "Home");
             }
             KhachHang kh1 = new KhachHang();
+
             if (Session["TaiKhoan"] == null)
             {
                 //Đối với khách hàng chưa có tài khoản 

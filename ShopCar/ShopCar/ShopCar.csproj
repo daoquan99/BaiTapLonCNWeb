@@ -148,7 +148,6 @@
     <Compile Include="Controllers\SanPhamController.cs" />
     <Compile Include="Controllers\SanPhamsController.cs" />
     <Compile Include="Controllers\TimKiemController.cs" />
-    <Compile Include="Controllers\TintucsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -414,6 +413,7 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="images\1.jpg" />
+    <Content Include="images\1.PNG" />
     <Content Include="images\10.jpg" />
     <Content Include="images\2.jpg" />
     <Content Include="images\2003porsche.jpg" />
@@ -638,11 +638,6 @@
     <Content Include="Views\CTPhieuNhaps\Details.cshtml" />
     <Content Include="Views\CTPhieuNhaps\Edit.cshtml" />
     <Content Include="Views\CTPhieuNhaps\Index.cshtml" />
-    <Content Include="Views\Tintucs\Create.cshtml" />
-    <Content Include="Views\Tintucs\Delete.cshtml" />
-    <Content Include="Views\Tintucs\Details.cshtml" />
-    <Content Include="Views\Tintucs\Edit.cshtml" />
-    <Content Include="Views\Tintucs\Index.cshtml" />
     <Content Include="Views\PhieuNhaps\View.cshtml" />
     <Content Include="Views\PhieuNhaps\CreatePartial.cshtml" />
     <Content Include="Views\Admin\ThongKe.cshtml" />
@@ -656,6 +651,7 @@
     <Content Include="Views\QuanLyDonHang\XemDonHang.cshtml" />
     <Content Include="Views\PhieuNhaps\Delete1.cshtml" />
     <Content Include="Views\PhieuNhaps\Edit1.cshtml" />
+    <Content Include="Views\Home\TinTucPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

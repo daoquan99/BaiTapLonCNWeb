@@ -5,18 +5,17 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="4401987d8d914048ad43f0595120924d" Name="Diagram1" ZoomLevel="86">
-        <EntityTypeShape EntityType="CarShopModel.Admin" Width="1.5" PointX="5.75" PointY="7.25" />
-        <EntityTypeShape EntityType="CarShopModel.CTHoaDon" Width="1.5" PointX="5.25" PointY="3.875" />
-        <EntityTypeShape EntityType="CarShopModel.CTPhieuNhap" Width="1.5" PointX="5.25" PointY="0.75" />
-        <EntityTypeShape EntityType="CarShopModel.HoaDon" Width="1.5" PointX="3" PointY="11.75" />
-        <EntityTypeShape EntityType="CarShopModel.KhachHang" Width="1.5" PointX="0.75" PointY="11.25" />
-        <EntityTypeShape EntityType="CarShopModel.LoaiSP" Width="1.5" PointX="0.75" PointY="4" />
-        <EntityTypeShape EntityType="CarShopModel.NhaCC" Width="1.5" PointX="0.75" PointY="7.625" />
-        <EntityTypeShape EntityType="CarShopModel.PhieuNhap" Width="1.5" PointX="3" PointY="7.625" />
+        <EntityTypeShape EntityType="CarShopModel.Admin" Width="1.5" PointX="5.75" PointY="7.125" />
+        <EntityTypeShape EntityType="CarShopModel.CTHoaDon" Width="1.5" PointX="5.25" PointY="0.75" />
+        <EntityTypeShape EntityType="CarShopModel.CTPhieuNhap" Width="1.5" PointX="5.25" PointY="3.625" />
+        <EntityTypeShape EntityType="CarShopModel.HoaDon" Width="1.5" PointX="3" PointY="8.125" />
+        <EntityTypeShape EntityType="CarShopModel.KhachHang" Width="1.5" PointX="0.75" PointY="7.625" />
+        <EntityTypeShape EntityType="CarShopModel.LoaiSP" Width="1.5" PointX="0.75" PointY="3.875" />
+        <EntityTypeShape EntityType="CarShopModel.NhaCC" Width="1.5" PointX="0.75" PointY="11.625" />
+        <EntityTypeShape EntityType="CarShopModel.PhieuNhap" Width="1.5" PointX="3" PointY="11.75" />
         <EntityTypeShape EntityType="CarShopModel.Quyen" Width="1.5" PointX="5.75" PointY="10.375" />
-        <EntityTypeShape EntityType="CarShopModel.QuyenAd" Width="1.5" PointX="8" PointY="7.25" />
-        <EntityTypeShape EntityType="CarShopModel.SanPham" Width="1.5" PointX="3" PointY="3.125" />
-        <EntityTypeShape EntityType="CarShopModel.Tintuc" Width="1.5" PointX="7.75" PointY="2.125" />
+        <EntityTypeShape EntityType="CarShopModel.QuyenAd" Width="1.5" PointX="8" PointY="7.125" />
+        <EntityTypeShape EntityType="CarShopModel.SanPham" Width="1.5" PointX="3" PointY="3" />
         <AssociationConnector Association="CarShopModel.FK__QuyenAd__MaAdmin__52593CB8" />
         <AssociationConnector Association="CarShopModel.FK__CTHoaDon__MaHD__66603565" />
         <AssociationConnector Association="CarShopModel.FK__CTHoaDon__MaSP__6754599E" />
