@@ -205,9 +205,6 @@
     <Compile Include="Model\SanPham.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Model\Tintuc.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -504,6 +501,7 @@
     <Content Include="images\RS - 49 - TRD SPORT ENG. OIL 5W40 GASOLINE 4X4L VN.png" />
     <Content Include="images\RS - 50 - TRD SPORT ENGINE OIL 5W40 DIESEL 4X4L VN.png" />
     <Content Include="images\RS - MOTUL-5w40-Power.png" />
+    <Content Include="images\GGmap.png" />
     <Content Include="images\son 2k 21118 .jpg" />
     <Content Include="images\tam-che-3-1.jpg" />
     <Content Include="images\tam-che-3-2.jpg" />
@@ -651,7 +649,12 @@
     <Content Include="Views\QuanLyDonHang\XemDonHang.cshtml" />
     <Content Include="Views\PhieuNhaps\Delete1.cshtml" />
     <Content Include="Views\PhieuNhaps\Edit1.cshtml" />
-    <Content Include="Views\Home\TinTucPartial.cshtml" />
+    <Content Include="Views\Home\VeChungToi.cshtml" />
+    <Content Include="Views\Home\LienHe.cshtml" />
+    <Content Include="Views\Home\CamKetChatLuong.cshtml" />
+    <Content Include="Views\Home\HuongDanMuaHang.cshtml" />
+    <Content Include="Views\Home\VanChuyeVaThanhToan.cshtml" />
+    <Content Include="Views\Home\ChinhSachBaoHanh.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

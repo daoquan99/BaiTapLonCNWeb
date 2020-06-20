@@ -8,16 +8,16 @@
         <span class="cart_count">@ViewBag.TongSoLuong</span>
     </a>
     <div class="mini_cart">
-        <div class="mini_cart_inner">
-            @if (Model.Count() == 0)
-            {
-                <h2>Giỏ hàng rỗng!</h2>
-            }
-            else
-            {
-                foreach (var item in Model)
+        @if (Model.Count() == 0)
+        {
+            <h2>Giỏ hàng rỗng!</h2>
+        }
+        else
+        {
+            <div class="mini_cart_inner">
+                @foreach (var item in Model)
                 {
-                    <div class="cart_item" >
+                    <div class="cart_item">
                         <div class="cart_img">
                             <a href="#"><img src="~/images/@item.URLAnh" style="height:50%;width:80%"></a>
                         </div>
@@ -26,26 +26,26 @@
                             <p>Số lượng: @item.SoLuong <span> @item.ThanhTien.ToString("#,##") </span></p>
                         </div>
                         <div class="cart_remove">
-                            <a href="@Url.Action("XoaItemGH","GioHang",new { @MaSP=item.MaSP })"><i class="ion-android-close"></i></a>
+                            <a href="@Url.Action("XoaItemGH", "GioHang", new { @MaSP = item.MaSP })"><i class="ion-android-close"></i></a>
                         </div>
                     </div>
                 }
-            }
-            <div class="mini_cart_table">
-                <div class="cart_total mt-10">
-                    <span>Tổng:</span>
-                    <span class="price">@ViewBag.TongTien.ToString("#,##") vnđ </span>
+                <div class="mini_cart_table">
+                    <div class="cart_total mt-10">
+                        <span>Tổng:</span>
+                        <span class="price">@ViewBag.TongTien.ToString("#,##") vnđ </span>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="mini_cart_footer">
-            <div class="cart_button">
-                <a href="/GioHang/XemGioHang">Xem giỏ hàng</a>
+            <div class="mini_cart_footer">
+                <div class="cart_button">
+                    <a href="/GioHang/XemGioHang">Xem giỏ hàng</a>
+                </div>
+                <div class="cart_button">
+                    <a href="/GioHang/XemGioHang">Thanh toán</a>
+                </div>
             </div>
-            <div class="cart_button">
-                <a href="/GioHang/XemGioHang">Thanh toán</a>
-            </div>
-        </div>
+        }
     </div>
 </div>
 

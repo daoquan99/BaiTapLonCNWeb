@@ -107,6 +107,32 @@ namespace ShopCar.Controllers
         {
             return View();
         }
+
+
+        public ActionResult VeChungToi()
+        {
+            return View();
+        }
+        public ActionResult LienHe()
+        {
+            return View();
+        }
+        public ActionResult CamKetChatLuong()
+        {
+            return View();
+        }
+        public ActionResult HuongDanMuaHang()
+        {
+            return View();
+        }
+        public ActionResult VanChuyeVaThanhToan()
+        {
+            return View();
+        }
+        public ActionResult ChinhSachBaoHanh()
+        {
+            return View();
+        }
         protected override void Dispose(bool disposing)
         {
             if (disposing)
