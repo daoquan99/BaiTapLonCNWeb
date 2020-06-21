@@ -1,0 +1,113 @@
+﻿@using CaptchaMvc.HtmlHelpers;
+@using ShopCar.Model;
+@model Admin
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>DangKy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/Content/assets/css/plugins.css">
+    <link rel="stylesheet" href="~/Content/assets/css/style.css">
+    <link rel="stylesheet" href="~/Content/assets/css/style1.css">
+
+</head>
+<body>
+    <div>
+        <div class="col-9 product-price">
+            <div class="register">
+                <h1 style="color:black;text-align:center;">Đăng ký thành viên Admin</h1>
+                <form action="/Admin/DangKy" method="post" style="margin-top:40px;">
+                    <div class="col-md-6 register-top-grid">
+                        <h3>Thông tin cá nhân</h3>
+                        <div>
+                            <span>Họ tên</span>
+                            <input id="TenKH" name="TenKH" type="text" value="">
+                        </div>
+                        <div>
+                            <span>Giới tính</span>
+                            <input id="GioiTinh" name="GioiTinh" type="text" value="">
+                        </div>
+                        <div>
+                            <span>Email</span>
+                            <input id="Email" name="Email" type="text" value="">
+                            @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                        </div>
+                        <div>
+                            <span>Số điện thoại</span>
+                            <input id="SDT" name="SDT" type="text" value="">
+                        </div>
+                        <div>
+                            <span>Địa chỉ</span>
+                            <input id="DiaChi" name="DiaChi" type="text" value="">
+                        </div>
+                    </div>
+                    <div class="col-md-6 register-bottom-grid">
+                        <h3>Thông tin đăng nhập</h3>
+                        <div>
+                            <span>Tài khoản</span>
+                            <input id="UserAd" name="UserAd" type="text" value="">
+                            @Html.ValidationMessageFor(model => model.UserAd, "", new { @class = "text-danger" })
+                        </div>
+                        <div>
+                            <span>Mật khẩu</span>
+                            <input id="Pass" name="Pass" type="password">
+                            @Html.ValidationMessageFor(model => model.Pass, "", new { @class = "text-danger" })
+                        </div>
+                        <div>
+                            <span>Nhập lại mật khẩu</span>
+                            <input id="NhapLaiMatKhau" name="NhapLaiMatKhau" type="password">
+                        </div>
+                        <div>
+                            <span>Mã xác nhận:</span>
+                            @Html.MathCaptcha()
+                        </div>
+                        <input type="submit" value="Đăng ký" class="btn btn-success" style="font-size:25px;">
+                    </div>
+                    <div class="clearfix"> </div>
+                </form>
+
+                <h2 style="color:red;">@ViewBag.ThongBao</h2>
+            </div>
+        </div>
+
+        <style>
+            .register-top-grid input[type="text"],
+            .register-bottom-grid input[type="password"] {
+                width: 100%;
+                padding: 1em;
+                margin: 1em 0;
+                background: none;
+                outline: none;
+                border-radius: 3px;
+                border: 1px solid #A09F9F;
+                -webkit-appearance: none;
+            }
+
+            .register-bottom-grid input[type="text"] {
+                width: 100%;
+                padding: 1em;
+                margin: 1em 0;
+                background: none;
+                border-radius: 3px;
+                border: 1px solid #A09F9F;
+                -webkit-appearance: none;
+            }
+
+            .product-price {
+                margin: 20px auto;
+            }
+        </style>
+    </div>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+    <script src="~/Content/assets/js/jquery.min.js"></script>
+</body>
+</html>

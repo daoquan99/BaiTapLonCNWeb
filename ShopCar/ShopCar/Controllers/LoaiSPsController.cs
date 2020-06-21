@@ -42,7 +42,6 @@ namespace ShopCar.Controllers
             {
                 return false;
             }
-
             return true;
         }
         private string autoID()

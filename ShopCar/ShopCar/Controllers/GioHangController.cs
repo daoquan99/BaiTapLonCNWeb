@@ -240,37 +240,78 @@ namespace ShopCar.Controllers
                 db.SaveChanges();
             }
         }
+
+        private bool idHasExist(string id)
+        {
+            LoaiSP temp = db.LoaiSPs.Find(id);
+            if (temp == null)
+            {
+                return false;
+            }
+            return true;
+        }
+
         private string autoIDKH(int dem)
         {
             string id = "";
-            if (dem < 9 && dem >= 0)
+            while (true)
             {
-                id = "KH00" + Convert.ToString(dem + 1);
-            }
-            else if (dem >= 9 && dem < 100)
-            {
-                id = "KH0" + Convert.ToString(dem + 1);
-            }
-            else if (dem >= 100)
-            {
-                id = "KH" + Convert.ToString(dem + 1);
+                if (dem < 10 && dem > 1)
+                {
+                    id = "L000" + Convert.ToString(dem);
+                }
+                else if (dem >= 10 && dem < 100)
+                {
+                    id = "L00" + Convert.ToString(dem);
+                }
+                else if (dem >= 100)
+                {
+                    id = "L0" + Convert.ToString(dem);
+                }
+                else if (dem == 1)
+                {
+                    id = "L0001";
+                }
+                if (idHasExist(id) == false)
+                {
+                    break;
+                }
+                else
+                {
+                    dem++;
+                }
             }
             return id;
         }
         private string autoIDHD(int dem)
         {
             string id = "";
-            if (dem < 9 && dem >= 0)
+            while (true)
             {
-                id = "HD00" + Convert.ToString(dem + 1);
-            }
-            else if (dem >= 9 && dem < 100)
-            {
-                id = "HD0" + Convert.ToString(dem + 1);
-            }
-            else if (dem >= 100)
-            {
-                id = "HD" + Convert.ToString(dem + 1);
+                if (dem < 10 && dem > 1)
+                {
+                    id = "L000" + Convert.ToString(dem);
+                }
+                else if (dem >= 10 && dem < 100)
+                {
+                    id = "L00" + Convert.ToString(dem);
+                }
+                else if (dem >= 100)
+                {
+                    id = "L0" + Convert.ToString(dem);
+                }
+                else if (dem == 1)
+                {
+                    id = "L0001";
+                }
+                if (idHasExist(id) == false)
+                {
+                    break;
+                }
+                else
+                {
+                    dem++;
+                }
             }
             return id;
         }

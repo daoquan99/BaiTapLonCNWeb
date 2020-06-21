@@ -835,7 +835,6 @@ E:\Kỳ 2 Năm 3\Công nghệ Web\New folder\BaiTapLonCNWeb\ShopCar\ShopCar\obj\
 E:\Kỳ 2 Năm 3\Công nghệ Web\New folder\BaiTapLonCNWeb\ShopCar\ShopCar\obj\Debug\ShopCar.csproj.CopyComplete
 E:\Kỳ 2 Năm 3\Công nghệ Web\New folder\BaiTapLonCNWeb\ShopCar\ShopCar\obj\Debug\ShopCar.dll
 E:\Kỳ 2 Năm 3\Công nghệ Web\New folder\BaiTapLonCNWeb\ShopCar\ShopCar\obj\Debug\ShopCar.pdb
-E:\Kỳ 2 Năm 3\Công nghệ Web\CNWeb\BaiTapLonCNWeb\ShopCar\ShopCar\obj\Debug\ShopCar.csprojAssemblyReference.cache
 E:\Kỳ 2 Năm 3\Công nghệ Web\CNWeb\BaiTapLonCNWeb\ShopCar\ShopCar\obj\Debug\ShopCar.csproj.CoreCompileInputs.cache
 E:\Kỳ 2 Năm 3\Công nghệ Web\CNWeb\BaiTapLonCNWeb\ShopCar\ShopCar\obj\Debug\ShopCar.dll
 E:\Kỳ 2 Năm 3\Công nghệ Web\CNWeb\BaiTapLonCNWeb\ShopCar\ShopCar\obj\Debug\ShopCar.pdb
@@ -922,3 +921,4 @@ E:\Kỳ 2 Năm 3\Công nghệ Web\CNWeb\BaiTapLonCNWeb\ShopCar\ShopCar\bin\Newto
 E:\Kỳ 2 Năm 3\Công nghệ Web\CNWeb\BaiTapLonCNWeb\ShopCar\ShopCar\bin\Antlr3.Runtime.pdb
 E:\Kỳ 2 Năm 3\Công nghệ Web\CNWeb\BaiTapLonCNWeb\ShopCar\ShopCar\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 E:\Kỳ 2 Năm 3\Công nghệ Web\CNWeb\BaiTapLonCNWeb\ShopCar\ShopCar\obj\Debug\ShopCar.csproj.CopyComplete
+E:\Kỳ 2 Năm 3\Công nghệ Web\CNWeb\BaiTapLonCNWeb\ShopCar\ShopCar\obj\Debug\ShopCar.csprojAssemblyReference.cache

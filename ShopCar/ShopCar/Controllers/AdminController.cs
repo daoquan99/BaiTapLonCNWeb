@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Security;
+using CaptchaMvc.HtmlHelpers;
 using ShopCar.Model;
 
 namespace WebsiteBanHang.Controllers
@@ -73,6 +74,88 @@ namespace WebsiteBanHang.Controllers
             FormsAuthentication.SignOut();
             return View("DangNhap");
         }
+        [HttpGet]
+        public ActionResult DangKy()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult DangKy(Admin ad,string NhapLaiMatKhau)
+        {
+            if (this.IsCaptchaValid("Captcha is not valid"))
+            {
+                if (ModelState.IsValid)
+                {
+                    var ad1 = db.Admins.Where(x => x.UserAd == ad.UserAd).FirstOrDefault();
+                    if (ad1 != null)
+                    {
+                        ViewBag.ThongBao = "tài khoản đã tồn tại";
+                        return View();
+                    }
+                    else
+                    {
+                        if (ad.Pass == NhapLaiMatKhau)
+                        {
+                            int dem = db.KhachHangs.Count();
+                            ad.MaAdmin = autoIDAdmin(dem);
+                            db.Admins.Add(ad);
+                            db.SaveChanges();
+                            ViewBag.ThongBao = "Thêm thành công!";
+                        }
+                        else ViewBag.ThongBao = "Mật khẩu không khớp";
+                    }
+                }
+                else
+                    ViewBag.ThongBao = "Thêm Thất bại";
+                return View();
+            }
+            ViewBag.ThongBao = "Sai mã captcha";
+            return View();
+        }
+
+        private bool idHasExist(string id)
+        {
+            LoaiSP temp = db.LoaiSPs.Find(id);
+            if (temp == null)
+            {
+                return false;
+            }
+            return true;
+        }
+        private string autoIDAdmin(int dem)
+        {
+            string id = "";
+            while (true)
+            {
+                if (dem < 10 && dem > 1)
+                {
+                    id = "L000" + Convert.ToString(dem);
+                }
+                else if (dem >= 10 && dem < 100)
+                {
+                    id = "L00" + Convert.ToString(dem);
+                }
+                else if (dem >= 100)
+                {
+                    id = "L0" + Convert.ToString(dem);
+                }
+                else if (dem == 1)
+                {
+                    id = "L0001";
+                }
+                if (idHasExist(id) == false)
+                {
+                    break;
+                }
+                else
+                {
+                    dem++;
+                }
+            }
+            return id;
+        }
+
         public void PhanQuyen(string txtTenDangNhap, string quyen)
         {
             FormsAuthentication.Initialize();

@@ -12,7 +12,6 @@
     <EntitySet Name="Quyens" EntityType="CarShopModel.Quyen" />
     <EntitySet Name="QuyenAds" EntityType="CarShopModel.QuyenAd" />
     <EntitySet Name="SanPhams" EntityType="CarShopModel.SanPham" />
-    <EntitySet Name="Tintucs" EntityType="CarShopModel.Tintuc" />
     <AssociationSet Name="FK__QuyenAd__MaAdmin__52593CB8" Association="CarShopModel.FK__QuyenAd__MaAdmin__52593CB8">
       <End Role="Admin" EntitySet="Admins" />
       <End Role="QuyenAd" EntitySet="QuyenAds" />
@@ -180,14 +179,6 @@
     <NavigationProperty Name="LoaiSP" Relationship="CarShopModel.FK__SanPham__MaLoaiS__68487DD7" FromRole="SanPham" ToRole="LoaiSP" />
     <NavigationProperty Name="SanPham1" Relationship="CarShopModel.FK_Sheet1__Sheet1_" FromRole="SanPham" ToRole="SanPham1" />
     <NavigationProperty Name="SanPham2" Relationship="CarShopModel.FK_Sheet1__Sheet1_" FromRole="SanPham1" ToRole="SanPham" />
-  </EntityType>
-  <EntityType Name="Tintuc">
-    <Key>
-      <PropertyRef Name="MaTin" />
-    </Key>
-    <Property Name="MaTin" Type="String" Nullable="false" MaxLength="5" FixedLength="true" Unicode="false" />
-    <Property Name="URLAnh" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
-    <Property Name="NoiDung" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
   </EntityType>
   <Association Name="FK__QuyenAd__MaAdmin__52593CB8">
     <End Type="CarShopModel.Admin" Role="Admin" Multiplicity="1" />

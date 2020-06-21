@@ -1,0 +1,45 @@
+﻿@using ShopCar.Model;
+@model Admin
+@{
+    ViewBag.Title = "SuaTaiKhoanAdmin";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+@{ 
+    IEnumerable<Quyen> lstQuyen = ViewBag.lstQuyen as IEnumerable<Quyen>;
+}
+
+<div class="table container col-6">
+    <h2 class="text-center">Sửa thông tin tài khoản: @Model.UserAd</h2>
+    <form action="" method="post">
+        <table class="table-active" style="margin-top:20px;width:100%;">
+            <tr>
+                <th>Tên Quyền</th>
+                <th>Chọn</th>
+            </tr>
+            <tbody>
+                @foreach (var item in lstQuyen.OrderByDescending(x => x.MaQuyen))
+                {
+                    @*<input type="hidden" name="@item.MaQuyen" />*@
+                    <tr>
+                        <td>@item.TenQuyen</td>
+                        <td>
+                            <input type="checkbox" name="MaQuyen" value="@item.MaQuyen" />
+                        </td>
+
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <div>
+            <input type="submit" class="btn btn-success" value="Lưu thông tin" />
+        </div>
+    </form>
+    
+</div>
+<style>
+    .table-active tr th {
+        background: #27EA67;
+        color: #ffff;
+    }
+</style>

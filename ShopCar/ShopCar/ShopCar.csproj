@@ -143,6 +143,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoaiSPsController.cs" />
     <Compile Include="Controllers\NhaCCsController.cs" />
+    <Compile Include="Controllers\PhanQuyenAdminController.cs" />
     <Compile Include="Controllers\PhieuNhapsController.cs" />
     <Compile Include="Controllers\QuanLyDonHangController.cs" />
     <Compile Include="Controllers\SanPhamController.cs" />
@@ -170,6 +171,7 @@
     <Compile Include="Model\LoaiSP.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Model\Metadata\Admin.Metadata.cs" />
     <Compile Include="Model\Metadata\KhachHang.Metadata.cs" />
     <Compile Include="Model\Metadata\LoaiSP.Metadata.cs" />
     <Compile Include="Model\Metadata\NhaCC.Metadata.cs" />
@@ -570,7 +572,6 @@
     <Content Include="Content\assets\fonts\plaza-icon56cc.eot" />
     <Content Include="Content\assets\fonts\plaza-icon56cc.ttf" />
     <Content Include="Content\assets\fonts\plaza-icon56cc.woff" />
-    <Content Include="Content\cssLogin\images\Thumbs.db" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -655,6 +656,9 @@
     <Content Include="Views\Home\HuongDanMuaHang.cshtml" />
     <Content Include="Views\Home\VanChuyeVaThanhToan.cshtml" />
     <Content Include="Views\Home\ChinhSachBaoHanh.cshtml" />
+    <Content Include="Views\Admin\DangKy.cshtml" />
+    <Content Include="Views\PhanQuyenAdmin\Index.cshtml" />
+    <Content Include="Views\PhanQuyenAdmin\SuaTaiKhoanAdmin.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

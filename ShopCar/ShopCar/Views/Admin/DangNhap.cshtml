@@ -22,9 +22,14 @@
                         <input type="password" class="txtMatKhau password" name="txtMatKhau" placeholder="Mật Khẩu" required="">
                         <p><a href="#">Quên tài khoản?</a></p>
                         <h3 style="color:red;">@ViewBag.thongbao</h3>
-                        <div class="container">
-                            <input type="submit" class="btn_Dang_Nhap" value="Đăng Nhập">
-                        </div>
+                        <ul class="login-buttons">
+                            <li>
+                                <input type="submit" class="btn_Dang_Nhap" value="Đăng Nhập">
+                            </li>
+                            <li class="btn_DangKy" style="margin-left:auto;margin-right:auto;">
+                                <a href="/Admin/DangKy" class="hvr-sweep-to-left ">Đăng ký</a>
+                            </li>
+                        </ul>
                     </form>
                 </div>
             </div>
@@ -36,13 +41,25 @@
         {
             width:80%;
         }
-        .login-form input[type="submit"] {
-            margin-left: 100px;
+        #popup_login input[type="submit"]{
+            padding: 10px 30px;
+        }
+        a.hvr-sweep-to-left{
+            padding: 10px 20px;
+            text-decoration:none;
         }
         @@media only screen and (max-width: 600px) {
-            .login-form input[type="submit"] {
-                margin-left: 40px;
+
+            #popup_login input[type="submit"] {
+                padding: 5px 15px;
+                margin-left: 0;
             }
+
+            a.hvr-sweep-to-left {
+                padding: 5px 10px;
+                text-decoration: none;
+            }
+
             #popup_login input[type="text"],
             #popup_login input[type="password"] {
                 width: 65%;

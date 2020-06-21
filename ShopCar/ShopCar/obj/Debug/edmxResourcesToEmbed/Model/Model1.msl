@@ -116,14 +116,5 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="Tintucs">
-      <EntityTypeMapping TypeName="CarShopModel.Tintuc">
-        <MappingFragment StoreEntitySet="Tintuc">
-          <ScalarProperty Name="NoiDung" ColumnName="NoiDung" />
-          <ScalarProperty Name="URLAnh" ColumnName="URLAnh" />
-          <ScalarProperty Name="MaTin" ColumnName="MaTin" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>

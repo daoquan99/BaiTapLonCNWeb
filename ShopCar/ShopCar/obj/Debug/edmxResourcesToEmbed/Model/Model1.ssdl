@@ -107,14 +107,6 @@
     <Property Name="URLAnh" Type="varchar" MaxLength="200" />
     <Property Name="MaLoaiSP" Type="char" MaxLength="5" />
   </EntityType>
-  <EntityType Name="Tintuc">
-    <Key>
-      <PropertyRef Name="MaTin" />
-    </Key>
-    <Property Name="MaTin" Type="char" MaxLength="5" Nullable="false" />
-    <Property Name="URLAnh" Type="varchar" MaxLength="200" />
-    <Property Name="NoiDung" Type="ntext" />
-  </EntityType>
   <Association Name="FK__CTHoaDon__MaHD__66603565">
     <End Role="HoaDon" Type="Self.HoaDon" Multiplicity="1" />
     <End Role="CTHoaDon" Type="Self.CTHoaDon" Multiplicity="*" />
@@ -251,7 +243,6 @@
     <EntitySet Name="Quyen" EntityType="Self.Quyen" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="QuyenAd" EntityType="Self.QuyenAd" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="SanPham" EntityType="Self.SanPham" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="Tintuc" EntityType="Self.Tintuc" Schema="dbo" store:Type="Tables" />
     <AssociationSet Name="FK__CTHoaDon__MaHD__66603565" Association="Self.FK__CTHoaDon__MaHD__66603565">
       <End Role="HoaDon" EntitySet="HoaDon" />
       <End Role="CTHoaDon" EntitySet="CTHoaDon" />

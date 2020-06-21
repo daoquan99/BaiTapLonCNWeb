@@ -17,22 +17,27 @@
                 <div>
                     <span>Họ tên</span>
                     <input id="TenKH" name="TenKH" type="text" value="">
+                    @Html.ValidationMessageFor(model => model.TenKH, "", new { @class = "text-danger" })
                 </div>
                 <div>
                     <span>Giới tính</span>
                     <input id="GioiTinh" name="GioiTinh" type="text" value="">
+                    @Html.ValidationMessageFor(model => model.GioiTinh, "", new { @class = "text-danger" })
                 </div>
                 <div>
                     <span>Email</span>
                     <input id="Email" name="Email" type="text" value="">
+                    @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
                 </div>
                 <div>
                     <span>Số điện thoại</span>
                     <input id="SDT" name="SDT" type="text" value="">
+                    @Html.ValidationMessageFor(model => model.SDT, "", new { @class = "text-danger" })
                 </div>
                 <div>
                     <span>Địa chỉ</span>
                     <input id="DiaChi" name="DiaChi" type="text" value="">
+                    @Html.ValidationMessageFor(model => model.DiaChi, "", new { @class = "text-danger" })
                 </div>
             </div>
             <div class="col-md-6 register-bottom-grid">
@@ -40,10 +45,12 @@
                 <div>
                     <span>Tài khoản</span>
                     <input id="UserName" name="UserName" type="text" value="">
+                    @Html.ValidationMessageFor(model => model.UserName, "", new { @class = "text-danger" })
                 </div>
                 <div>
                     <span>Mật khẩu</span>
                     <input id="Pass" name="Pass" type="password">
+                    @Html.ValidationMessageFor(model => model.Pass, "", new { @class = "text-danger" })
                 </div>
                 <div>
                     <span>Nhập lại mật khẩu</span>

@@ -1,0 +1,76 @@
+﻿@using ShopCar.Model;
+@model IEnumerable<Admin>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+@{
+    IEnumerable<QuyenAd> lstQuyenAd = ViewBag.lstQuyen as IEnumerable<QuyenAd>;
+}
+
+<div class="table container col-10">
+    <h2 class="text-center">Danh sách các tài khoản Admin</h2>
+    <table class="table-active" style="margin-top:20px;width:100%;">
+        <tr>
+            <th>Tên tài khoản</th>
+            <th>Mật khẩu</th>
+            <th>Quyền</th>
+            <th>Email</th>
+            <th></th>
+        </tr>
+        <tbody>
+            @foreach (var groupItem in Model)
+            {
+                <tr>
+                    <td>@groupItem.UserAd</td>
+                    <td>@groupItem.Pass</td>
+                    <td>
+                        @{
+                            var lstQuyenItem = lstQuyenAd.Where(x => x.MaAdmin == groupItem.MaAdmin);
+                            foreach (var item in lstQuyenItem)
+                            {
+                                @item.Quyen.TenQuyen;<br />
+                            }
+                        }
+                    </td>
+                    <td>@groupItem.Email</td>
+                    <td>
+                        <a href="@Url.Action("SuaTaiKhoanAdmin",new { @MaAdmin=groupItem.MaAdmin })">
+                            <i class="fa fa-edit" title="Chỉnh sửa"></i>
+                        </a>
+                        <a href="@Url.Action("XoaTaiKhoaAdmin",new { @MaAdmin=groupItem.MaAdmin })">
+                            <i class="fa fa-trash-o" title="Xóa"></i>
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<style>
+    .table-active tr th {
+        background: #27EA67;
+        color: #ffff;
+    }
+
+    .table-active tr td a {
+        font-size: 25px;
+        margin: 10px;
+    }
+
+    .fa.fa-remove {
+        color: #EA272E;
+    }
+        .fa.fa-remove:hover {
+            color: #810C19;
+        }
+    .fa.fa-edit {
+        color: #15C44C;
+    }
+        .fa.fa-edit:hover {
+            color: #097E3E;
+        }
+</style>

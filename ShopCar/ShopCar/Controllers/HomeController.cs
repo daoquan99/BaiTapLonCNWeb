@@ -59,9 +59,8 @@ namespace ShopCar.Controllers
             return View();
         }
         [HttpPost]
-        public ActionResult DangKy(KhachHang kh)
+        public ActionResult DangKy(KhachHang kh,string NhapLaiMatKhau)
         {
-            
             if (this.IsCaptchaValid("Captcha is not valid"))
             {
                 if (ModelState.IsValid)
@@ -73,11 +72,18 @@ namespace ShopCar.Controllers
                         ViewBag.ThongBao = "tài khoản đã tồn tại";
                         return View();
                     }
-                    int dem = db.KhachHangs.Count();
-                    kh.MaKH = autoID(dem);
-                    db.KhachHangs.Add(kh);
-                    db.SaveChanges();
-                    ViewBag.ThongBao = "Thêm thành công!";
+                    else
+                    {
+                        if (kh.Pass == NhapLaiMatKhau)
+                        {
+                            int dem = db.KhachHangs.Count();
+                            kh.MaKH = autoID(dem);
+                            db.KhachHangs.Add(kh);
+                            db.SaveChanges();
+                            ViewBag.ThongBao = "Thêm thành công!";
+                        }
+                        else ViewBag.ThongBao = "Mật khẩu không khớp";
+                    }
                 }
                 else
                     ViewBag.ThongBao = "Thêm Thất bại";
@@ -86,20 +92,44 @@ namespace ShopCar.Controllers
             ViewBag.ThongBao = "Sai mã captcha";
             return View();
         }
+        private bool idHasExist(string id)
+        {
+            LoaiSP temp = db.LoaiSPs.Find(id);
+            if (temp == null)
+            {
+                return false;
+            }
+            return true;
+        }
         private string autoID(int dem)
         {
             string id = "";
-            if (dem < 9 && dem >= 0)
+            while (true)
             {
-                id = "KH00" + Convert.ToString(dem + 1);
-            }
-            else if (dem >= 9 && dem < 99)
-            {
-                id = "KH0" + Convert.ToString(dem + 1);
-            }
-            else if (dem >= 99)
-            {
-                id = "KH" + Convert.ToString(dem + 1);
+                if (dem < 10 && dem > 1)
+                {
+                    id = "L000" + Convert.ToString(dem);
+                }
+                else if (dem >= 10 && dem < 100)
+                {
+                    id = "L00" + Convert.ToString(dem);
+                }
+                else if (dem >= 100)
+                {
+                    id = "L0" + Convert.ToString(dem);
+                }
+                else if (dem == 1)
+                {
+                    id = "L0001";
+                }
+                if (idHasExist(id) == false)
+                {
+                    break;
+                }
+                else
+                {
+                    dem++;
+                }
             }
             return id;
         }
