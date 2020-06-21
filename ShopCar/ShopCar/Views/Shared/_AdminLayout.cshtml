@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="~/Assets/AssetsAdmin/css/style-starter.css">
     <!-- google fonts -->
     <link href="//fonts.googleapis.com/css?family=Nunito:300,400,600,700,800,900&display=swap" rel="stylesheet">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <script src="~/Scripts/jquery-3.4.1.js"></script>
 
 
@@ -50,7 +50,7 @@
                             <span>Phiếu Nhập</span>
                         </a>
                     </li>
-                    
+
                     <li>
                         <a href="@Url.Action("Index","LoaiSPs")">
                             <i class="fa fa-bars"></i>
@@ -59,14 +59,20 @@
                     </li>
                     <li>
                         <a href="@Url.Action("Index","SanPhams")">
-                            <i class="fa fa-product-hunt"></i>
+                            <i class="fab fa-product-hunt"></i>
                             <span>Sản Phẩm</span>
                         </a>
                     </li>
                     <li>
                         <a href="/QuanLyDonHang/DonHangChuaGiao">
-                            <i class="fa fa-first-order"></i>
+                            <i class="fab fa-first-order"></i>
                             <span>Đơn đặt hàng</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/PhanQuyenAdmin/Index">
+                            <i class="fa fa-user-tag"></i>
+                            <span>Phân quyền Admin</span>
                         </a>
                     </li>
                 </ul>
@@ -91,7 +97,7 @@
             <!-- notification menu start -->
             <div class="menu-right">
                 <div class="navbar user-panel-top">
-                    <div class="search-box">
+                    <div class="search-box" style="opacity:0;visibility:hidden;">
                         <form action="#search-results.html" method="get">
                             <input class="search-input" placeholder="Tìm kiếm..." type="search" id="search">
                             <button class="search-submit" value="">
